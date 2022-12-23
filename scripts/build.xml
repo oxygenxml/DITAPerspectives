@@ -2,8 +2,9 @@
 <project basedir="." name="ditaPerspectives">
 	
 	<property name="outputFolder" value="../reportDITA"/>
+	<property name="baseXSLFolder" value="xslt"/>
 	<property name="stylesFolder" value="../frameworks/graphModel/xslt"/>
-	<property name="categoriesStylesheet" value="categories.xsl"/>
+	<property name="categoriesStylesheet" value="${baseXSLFolder}/categories.xsl"/>
 	<property name="outputTemplate" value="../report"/>
 	
 	<property name="dot" value="/usr/local/bin/dot"/>
@@ -19,7 +20,7 @@
 
 
 	<target name="generateGraph" depends="generateCategories">
-		<xslt in="${outputFolder}/categories.xml" style="extract${module}.xsl" out="${outputFolder}/gm/${module}.xml"/>
+		<xslt in="${outputFolder}/categories.xml" style="${baseXSLFolder}/extract${module}.xsl" out="${outputFolder}/gm/${module}.xml"/>
 		<xslt in="${outputFolder}/gm/${module}.xml" style="${stylesFolder}/graphModel2HTML.xsl" out="${outputFolder}/gm/${module}.html"/>
 		<xslt in="${outputFolder}/gm/${module}.xml" style="${stylesFolder}/graphModel2DOT.xsl" out="${outputFolder}/gm/${module}.dot"/>
 		<exec executable="${dot}">
@@ -31,7 +32,7 @@
 	</target>
 	
 	<target name="generateSVGGraph" depends="generateCategories">
-		<xslt in="${outputFolder}/categories.xml" style="extract${module}.xsl" out="${outputFolder}/gm/${module}.xml"/>
+		<xslt in="${outputFolder}/categories.xml" style="${baseXSLFolder}/extract${module}.xsl" out="${outputFolder}/gm/${module}.xml"/>
 		<xslt in="${outputFolder}/gm/${module}.xml" style="${stylesFolder}/graphModel2DOT.xsl" out="${outputFolder}/gm/${module}.dot"/>
 		<exec executable="${dot}">
 			<arg value="-Tsvg"/>
@@ -146,7 +147,7 @@
 		<antcall target="all">
 			<param name="outputFolder" value="../reportDITA13"/>
 			<param name="stylesFolder" value="../frameworks/graphModel/xslt"/>
-			<param name="categoriesStylesheet" value="categories.xsl"/>
+			<param name="categoriesStylesheet" value="${baseXSLFolder}/categories.xsl"/>
 			<param name="outputTemplate" value="../report"/>
 		</antcall>
 	</target>
@@ -161,7 +162,7 @@
 		<antcall target="all">
 			<param name="outputFolder" value="../reportDITA20"/>
 			<param name="stylesFolder" value="../frameworks/graphModel/xslt"/>
-			<param name="categoriesStylesheet" value="categories2.xsl"/>
+			<param name="categoriesStylesheet" value="${baseXSLFolder}/categories2.xsl"/>
 			<param name="outputTemplate" value="../report"/>
 		</antcall>
 	</target>
