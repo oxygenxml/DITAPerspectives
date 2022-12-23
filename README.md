@@ -16,7 +16,7 @@ In the end the static content from the `report-template` folder is combined with
 
 This DITA content may be used then further as you wish, for example to publish it to PDF or HTML/WebHelp format, or you may include it into a larger DITA documentation project.
 
-The transformations are orchestrated using an `ant` build file, `build.xml` found in the `scripts` folder. There are two Oxygen XML Editor transformation scenarios configured at project level called `Build allReports` and `Build cleanReports` - the first one will generate the reports for DITA 1.3 in the `reportDITA13` folder and for DITA 2.0 in the `reportDITA20` folder inside the project directory.
+The transformations are orchestrated using an `ant` build file, `build.xml` found in the `scripts` folder. There are two Oxygen XML Editor transformation scenarios configured at project level called `Build allReports` and `Build cleanReports` - the first one will generate the reports for DITA 1.3 in the `generated-reports/DITA13` folder and for DITA 2.0 in the `generated-reports/DITA20` folder inside the project directory.
 
 There is also a `run.sh` shell script that is used to trigger the `ant` build with the `allReports` target to generate the documentation for the DITA 1.3 schemas and for DITA 2.0 schemas and this adds some libraries that are needed to apply the XSLT 3.0 stylesheets that we use and you may need to adjust the pointers to the libraries to match your configuration.  
 

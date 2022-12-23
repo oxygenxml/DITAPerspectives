@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir="." name="ditaPerspectives">
 	
-	<property name="outputFolder" value="../reportDITA"/>
+	<property name="outputFolder" value="../generated-reports/DITA"/>
 	<property name="baseXSLFolder" value="xslt"/>
 	<property name="stylesFolder" value="../frameworks/graphModel/xslt"/>
 	<property name="categoriesStylesheet" value="${baseXSLFolder}/categories.xsl"/>
@@ -145,7 +145,7 @@
 	
 	<target name="dita13">
 		<antcall target="all">
-			<param name="outputFolder" value="../reportDITA13"/>
+			<param name="outputFolder" value="${outputFolder}13"/>
 			<param name="stylesFolder" value="../frameworks/graphModel/xslt"/>
 			<param name="categoriesStylesheet" value="${baseXSLFolder}/categories.xsl"/>
 			<param name="outputTemplate" value="../report-template"/>
@@ -154,13 +154,13 @@
 	
 	<target name="cleanDita13">
 		<antcall target="clean">
-			<param name="outputFolder" value="../reportDITA13"/>
+			<param name="outputFolder" value="${outputFolder}13"/>
 		</antcall>
 	</target>
 	
 	<target name="dita20">
 		<antcall target="all">
-			<param name="outputFolder" value="../reportDITA20"/>
+			<param name="outputFolder" value="${outputFolder}20"/>
 			<param name="stylesFolder" value="../frameworks/graphModel/xslt"/>
 			<param name="categoriesStylesheet" value="${baseXSLFolder}/categories2.xsl"/>
 			<param name="outputTemplate" value="../report-template"/>
@@ -168,7 +168,7 @@
 	</target>
 	<target name="cleanDita20">
 		<antcall target="clean">
-			<param name="outputFolder" value="../reportDITA20"/>
+			<param name="outputFolder" value="${outputFolder}20"/>
 		</antcall>
 	</target>
 	
