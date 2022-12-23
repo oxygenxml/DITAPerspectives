@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain abbrev-d">
+   <nodes root="abbrev-d">
+      <node name="term">
+         <node name="abbreviated-form"/>
+      </node>
+   </nodes>
+</graph>

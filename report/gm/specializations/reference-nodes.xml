@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Specialization reference">
+   <nodes root="referenceModule">
+      <node name="topic">
+         <node name="reference"/>
+      </node>
+      <node name="body">
+         <node name="refbody"/>
+      </node>
+      <node name="bodydiv">
+         <node name="refbodydiv"/>
+      </node>
+      <node name="section">
+         <node name="refsyn"/>
+      </node>
+      <node name="simpletable">
+         <node name="properties"/>
+      </node>
+      <node name="sthead">
+         <node name="prophead"/>
+      </node>
+      <node name="stentry">
+         <node name="proptypehd"/>
+         <node name="propvaluehd"/>
+         <node name="propdeschd"/>
+         <node name="proptype"/>
+         <node name="propvalue"/>
+         <node name="propdesc"/>
+      </node>
+      <node name="strow">
+         <node name="property"/>
+      </node>
+   </nodes>
+</graph>

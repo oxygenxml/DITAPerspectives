@@ -1,0 +1,49 @@
+// DITA Domain ui-d
+strict digraph {
+				
+  // Root node
+  
+	"ui-d" [label ="ui-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"ph" [label ="ph" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"uicontrol" [label ="uicontrol" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"menucascade" [label ="menucascade" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"keyword" [label ="keyword" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"wintitle" [label ="wintitle" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"shortcut" [label ="shortcut" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"pre" [label ="pre" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"screen" [label ="screen" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"ui-d" -> "ph" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "uicontrol" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "menucascade" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"ui-d" -> "keyword" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"keyword" -> "wintitle" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"keyword" -> "shortcut" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"ui-d" -> "pre" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"pre" -> "screen" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

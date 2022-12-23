@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domains">
+   <nodes>
+      <node name="domains" label="Domanins | 27">
+         <node name="learningInteractionBase2-d"/>
+         <node name="learningmap-d"/>
+         <node name="learningInteractionBase-d"/>
+         <node name="learningmeta-d"/>
+         <node name="learning-d"/>
+         <node name="learning2-d"/>
+         <node name="abbrev-d"/>
+         <node name="markup-d"/>
+         <node name="mathml-d"/>
+         <node name="svg-d"/>
+         <node name="ui-d"/>
+         <node name="equation-d"/>
+         <node name="taskreq-d"/>
+         <node name="pr-d"/>
+         <node name="xml-d"/>
+         <node name="glossref-d"/>
+         <node name="sw-d"/>
+         <node name="relmgmt-d"/>
+         <node name="xnal-d"/>
+         <node name="ditavalref-d"/>
+         <node name="delay-d"/>
+         <node name="indexing-d"/>
+         <node name="hazard-d"/>
+         <node name="hi-d"/>
+         <node name="mapgroup-d"/>
+         <node name="ut-d"/>
+         <node name="classify-d"/>
+      </node>
+   </nodes>
+</graph>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+
+The file must be saved inside a framework directory, the same place where a *.framework file should sit.
+
+To generate a *.framework file out of the script, you need to use the "Compile Framework Extension script" action 
+from the contextual menu.
+-->
+<script xmlns="http://www.oxygenxml.com/ns/framework/extend"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/framework/extend http://www.oxygenxml.com/ns/framework/extend/frameworkExtensionScript.xsd"
+  base="DITA">
+  <name>DITA3</name>
+  <description/>
+  <priority>High</priority>
+  
+	<author>
+		<css>
+			<addCss path="${framework}/resources/softGeneralization.css" alternate="false" title=""/>
+		</css>
+	</author>
+	
+</script>

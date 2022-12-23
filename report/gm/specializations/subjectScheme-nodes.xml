@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Specialization subjectScheme">
+   <nodes root="subjectSchemeModule">
+      <node name="map">
+         <node name="subjectScheme"/>
+      </node>
+      <node name="topicref">
+         <node name="schemeref"/>
+         <node name="hasNarrower"/>
+         <node name="hasKind"/>
+         <node name="hasPart"/>
+         <node name="hasInstance"/>
+         <node name="hasRelated"/>
+         <node name="subjectdef"/>
+         <node name="subjectHead"/>
+         <node name="enumerationdef"/>
+         <node name="defaultSubject"/>
+         <node name="relatedSubjects"/>
+      </node>
+      <node name="topicmeta">
+         <node name="subjectHeadMeta"/>
+      </node>
+      <node name="data">
+         <node name="elementdef"/>
+         <node name="attributedef"/>
+      </node>
+      <node name="reltable">
+         <node name="subjectRelTable"/>
+      </node>
+      <node name="relrow">
+         <node name="subjectRelHeader"/>
+         <node name="subjectRel"/>
+      </node>
+      <node name="relcell">
+         <node name="subjectRole"/>
+      </node>
+   </nodes>
+</graph>

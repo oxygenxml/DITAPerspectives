@@ -1,0 +1,31 @@
+// DITA Domain mathml-d
+strict digraph {
+				
+  // Root node
+  
+	"mathml-d" [label ="mathml-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"xref" [label ="xref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"mathmlref" [label ="mathmlref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"foreign" [label ="foreign" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"mathml" [label ="mathml" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"mathml-d" -> "xref" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"xref" -> "mathmlref" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"mathml-d" -> "foreign" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"foreign" -> "mathml" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

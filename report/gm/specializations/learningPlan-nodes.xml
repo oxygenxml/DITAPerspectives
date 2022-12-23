@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Specialization learningPlan">
+   <nodes root="learningPlanModule">
+      <node name="learningBase">
+         <node name="learningPlan"/>
+      </node>
+      <node name="learningBasebody">
+         <node name="learningPlanbody"/>
+      </node>
+      <node name="section">
+         <node name="lcProject"/>
+         <node name="lcNeedsAnalysis"/>
+         <node name="lcGapAnalysis"/>
+         <node name="lcIntervention"/>
+         <node name="lcTechnical"/>
+      </node>
+      <node name="fig">
+         <node name="lcClient"/>
+         <node name="lcPlanTitle"/>
+         <node name="lcCIN"/>
+         <node name="lcModDate"/>
+         <node name="lcDelivDate"/>
+         <node name="lcPlanSubject"/>
+         <node name="lcPlanDescrip"/>
+         <node name="lcPlanPrereqs"/>
+         <node name="lcOrganizational"/>
+         <node name="lcPlanAudience"/>
+         <node name="lcWorkEnv"/>
+         <node name="lcTask"/>
+         <node name="lcGapItem"/>
+         <node name="lcInterventionItem"/>
+         <node name="lcLMS"/>
+         <node name="lcNoLMS"/>
+         <node name="lcHandouts"/>
+         <node name="lcClassroom"/>
+         <node name="lcOJT"/>
+         <node name="lcConstraints"/>
+         <node name="lcW3C"/>
+         <node name="lcPlayers"/>
+         <node name="lcGraphics"/>
+         <node name="lcViewers"/>
+         <node name="lcResolution"/>
+         <node name="lcFileSizeLimitations"/>
+         <node name="lcDownloadTime"/>
+         <node name="lcSecurity"/>
+      </node>
+      <node name="p">
+         <node name="lcGeneralDescription"/>
+         <node name="lcGoals"/>
+         <node name="lcNeeds"/>
+         <node name="lcValues"/>
+         <node name="lcOrgConstraints"/>
+         <node name="lcEdLevel"/>
+         <node name="lcAge"/>
+         <node name="lcBackground"/>
+         <node name="lcSkills"/>
+         <node name="lcKnowledge"/>
+         <node name="lcMotivation"/>
+         <node name="lcSpecChars"/>
+         <node name="lcWorkEnvDescription"/>
+         <node name="lcPlanResources"/>
+         <node name="lcProcesses"/>
+         <node name="lcTaskItem"/>
+         <node name="lcAttitude"/>
+         <node name="lcPlanObjective"/>
+         <node name="lcJtaItem"/>
+         <node name="lcGapItemDelta"/>
+         <node name="lcLearnStrat"/>
+         <node name="lcAssessment"/>
+         <node name="lcDelivery"/>
+      </node>
+   </nodes>
+</graph>

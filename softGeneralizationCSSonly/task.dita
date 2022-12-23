@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_tmt_f5f_hvb">
+	<title>Sample task</title>
+	<shortdesc/>
+	<taskbody>
+		<context>
+			<p>Test </p>
+		</context>
+		<steps>
+			<step>
+				<cmd>Sample</cmd>
+			</step>
+			<step>
+				<cmd>Test</cmd>
+			</step>
+			<step>
+				<cmd>Done!</cmd>
+			</step>
+		</steps>
+		<example>Sample</example>
+		<postreq id="postreq_fh3_h5f_hvb">Perform validation!</postreq>
+	</taskbody>
+</task>

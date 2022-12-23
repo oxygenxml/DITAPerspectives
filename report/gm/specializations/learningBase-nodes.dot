@@ -1,0 +1,125 @@
+// DITA Specialization learningBase
+strict digraph {
+				
+  // Root node
+  
+	"learningBaseModule" [label ="learningBaseModule" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"topic" [label ="topic" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"learningBase" [label ="learningBase" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"body" [label ="body" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"learningBasebody" [label ="learningBasebody" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"section" [label ="section" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcIntro" [label ="lcIntro" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcObjectives" [label ="lcObjectives" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcAudience" [label ="lcAudience" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcDuration" [label ="lcDuration" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcPrereqs" [label ="lcPrereqs" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcSummary" [label ="lcSummary" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcNextSteps" [label ="lcNextSteps" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcReview" [label ="lcReview" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcResources" [label ="lcResources" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcChallenge" [label ="lcChallenge" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcInstruction" [label ="lcInstruction" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcInteraction" [label ="lcInteraction" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"ph" [label ="ph" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcObjectivesStem" [label ="lcObjectivesStem" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"ul" [label ="ul" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcObjectivesGroup" [label ="lcObjectivesGroup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"li" [label ="li" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcObjective" [label ="lcObjective" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"data" [label ="data" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcTime" [label ="lcTime" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"learningBaseModule" -> "topic" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "learningBase" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learningBaseModule" -> "body" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"body" -> "learningBasebody" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learningBaseModule" -> "section" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcIntro" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcObjectives" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcAudience" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcDuration" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcPrereqs" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcSummary" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcNextSteps" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcReview" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcResources" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcChallenge" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcInstruction" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcInteraction" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learningBaseModule" -> "ph" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "lcObjectivesStem" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learningBaseModule" -> "ul" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ul" -> "lcObjectivesGroup" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learningBaseModule" -> "li" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"li" -> "lcObjective" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learningBaseModule" -> "data" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lcTime" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_y14_vft_gvb">
+	<title>Sample topic for soft generalization</title>
+	<body>
+		<p>Some highlights: <b>Sample</b> <i>test</i>. </p>
+		<p>Use the <uicontrol>New</uicontrol> action.</p>
+		<p>This is an <apiname>XML</apiname> element: <xmlelement>topic</xmlelement> </p>
+	</body>
+</topic>

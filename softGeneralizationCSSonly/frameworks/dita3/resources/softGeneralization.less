@@ -1,0 +1,125 @@
+
+:root:before {
+		content : 
+		
+		oxy_action(
+          name, 'Generalized', 
+          description, 'See as base elements', 
+          operation, 'ro.sync.ecss.extensions.commons.operations.ChangePseudoClassesOperation', 
+          
+          arg-setLocations, '/*',
+          arg-setPseudoClassNames, '-oxy-level1',
+          arg-removeLocations, '/*',
+          arg-removePseudoClassNames, '-oxy-level2 -oxy-level3'
+		)
+		" "
+		oxy_action(
+          name, 'Intermediary', 
+          description, 'See as base elements', 
+          operation, 'ro.sync.ecss.extensions.commons.operations.ChangePseudoClassesOperation', 
+          
+          arg-setLocations, '/*',
+          arg-setPseudoClassNames, '-oxy-level2',
+          arg-removeLocations, '/*',
+          arg-removePseudoClassNames, '-oxy-level1 -oxy-level3'
+		)
+		" "
+		oxy_action(
+          name, 'Show tags', 
+          description, 'See as elements', 
+          operation, 'ro.sync.ecss.extensions.commons.operations.ChangePseudoClassesOperation', 
+          
+          arg-setLocations, '/*',
+          arg-setPseudoClassNames, '-oxy-level3',
+          arg-removeLocations, '/*',
+          arg-removePseudoClassNames, '-oxy-level1 -oxy-level2'
+		)
+		" "
+		
+		oxy_action(
+          name, 'Default', 
+          description, 'See as base elements', 
+          operation, 'ro.sync.ecss.extensions.commons.operations.ChangePseudoClassesOperation', 
+          
+          arg-removeLocations, '/*',
+          arg-removePseudoClassNames, '-oxy-level1 -oxy-level2 -oxy-level3'
+		)
+	
+
+	
+}
+
+
+.tag() {
+	font-size:medium;
+	font-family:arial, helvetica, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+	vertical-align:central;
+	border-radius:0.2em;
+	background-color:lightgray;
+	border:1px solid gray;
+	margin-left:0.2em;
+	margin-right:0.2em;
+	padding-left:0.2em;
+	padding-right:0.2em;
+}
+
+* {
+	-oxy-display-tags:none;
+}
+
+/**:before(1001) {
+	.tag();
+	content: "<" oxy_local-name() ">";
+}
+
+*:after(1001) {
+	.tag();
+	content: "</" oxy_local-name() ">";
+}
+*/
+:root:-oxy-level1 *:before(1001) {
+	.tag();
+	content: "<" oxy_xpath('let $tag:= substring-after(tokenize(@class)[2], "/") return if ($tag="") then local-name() else $tag') ">";
+	background-color: oxy_xpath('if (string-length(tokenize(@class)[4])=0) then (if (string-length(tokenize(@class)[3])=0) then "lightgray" else "lightblue") else "lightgreen"');
+}
+
+:root:-oxy-level1 *:after(1001) {
+	.tag();
+	content: "</" oxy_xpath('let $tag:= substring-after(tokenize(@class)[2], "/") return if ($tag="") then local-name() else $tag') ">";
+	background-color: oxy_xpath('if (string-length(tokenize(@class)[4])=0) then (if (string-length(tokenize(@class)[3])=0) then "lightgray" else "lightblue") else "lightgreen"');
+}
+
+
+:root:-oxy-level2 *:before(1001) {
+	.tag();
+	content: "<" oxy_xpath('let $tag:= substring-after(tokenize(@class)[3], "/") return if ($tag="") then local-name() else $tag') ">";
+	background-color: oxy_xpath('if (string-length(tokenize(@class)[4])=0) then "lightgray" else "lightblue"');
+}
+
+:root:-oxy-level2  *:after(1001) {
+	.tag();
+	content: "</" oxy_xpath('let $tag:= substring-after(tokenize(@class)[3], "/") return if ($tag="") then local-name() else $tag') ">";
+	background-color: oxy_xpath('if (string-length(tokenize(@class)[4])=0) then "lightgray" else "lightblue"');
+}
+
+:root:-oxy-level3 *:before(1001) {
+	.tag();
+	content: "<" oxy_xpath('let $tag:= substring-after(tokenize(@class)[4], "/") return if ($tag="") then local-name() else $tag') ">";
+}
+
+:root:-oxy-level3  *:after(1001) {
+	.tag();
+	content: "</" oxy_xpath('let $tag:= substring-after(tokenize(@class)[4], "/") return if ($tag="") then local-name() else $tag') ">";
+}
+
+
+
+
+
+
+
+
+
+

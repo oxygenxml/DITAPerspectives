@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="ditaPerspectives">
+	
+	<property name="outputFolder" value="../reportDITA"/>
+	<property name="stylesFolder" value="../frameworks/graphModel/xslt"/>
+	<property name="categoriesStylesheet" value="categories.xsl"/>
+	<property name="outputTemplate" value="../report"/>
+	
+	<property name="dot" value="/usr/local/bin/dot"/>
+	
+	<target name="copyTemplateResources">
+		<copydir src="${outputTemplate}/topics" dest="${outputFolder}/topics"/>
+		<copyfile src="${outputTemplate}/DITA Perspectives.ditamap" dest="${outputFolder}/DITA Perspectives.ditamap"/>
+	</target>
+	
+	<target name="generateCategories">
+		<xslt in="${categoriesStylesheet}" style="${categoriesStylesheet}" out="${outputFolder}/categories.xml"/>
+	</target>
+
+
+	<target name="generateGraph" depends="generateCategories">
+		<xslt in="${outputFolder}/categories.xml" style="extract${module}.xsl" out="${outputFolder}/gm/${module}.xml"/>
+		<xslt in="${outputFolder}/gm/${module}.xml" style="${stylesFolder}/graphModel2HTML.xsl" out="${outputFolder}/gm/${module}.html"/>
+		<xslt in="${outputFolder}/gm/${module}.xml" style="${stylesFolder}/graphModel2DOT.xsl" out="${outputFolder}/gm/${module}.dot"/>
+		<exec executable="${dot}">
+			<arg value="-Tsvg"/>
+			<arg value="-o${outputFolder}/gm/${module}.svg"/>
+			<arg value="-Kfdp"/>
+			<arg value="${outputFolder}/gm/${module}.dot"/>
+		</exec>
+	</target>
+	
+	<target name="generateSVGGraph" depends="generateCategories">
+		<xslt in="${outputFolder}/categories.xml" style="extract${module}.xsl" out="${outputFolder}/gm/${module}.xml"/>
+		<xslt in="${outputFolder}/gm/${module}.xml" style="${stylesFolder}/graphModel2DOT.xsl" out="${outputFolder}/gm/${module}.dot"/>
+		<exec executable="${dot}">
+			<arg value="-Tsvg"/>
+			<arg value="-o${outputFolder}/gm/${module}.svg"/>
+			<arg value="-Kfdp"/>
+			<arg value="${outputFolder}/gm/${module}.dot"/>
+		</exec>
+	</target>
+	
+	<target name="extractShellModulesByGroup" depends="generateCategories">
+		<antcall target="generateGraph">
+			<param name="module" value="ShellModulesByGroup"/>
+		</antcall>
+	</target>
+	<target name="extractBaseModules">
+		<antcall target="generateGraph">
+			<param name="module" value="BaseModules"/>
+		</antcall>
+	</target>
+	<target name="extractModulesHierarchy">
+		<antcall target="generateSVGGraph">
+			<param name="module" value="ModulesHierarchy"/>
+		</antcall>
+	</target>
+	
+	<target name="extractBaseDITAElements">
+		<antcall target="generateSVGGraph">
+			<param name="module" value="BaseDITAElements"/>
+		</antcall>
+	</target>
+	
+	<target name="extractBaseDITATopicAndMapElements">
+		<antcall target="generateSVGGraph">
+			<param name="module" value="BaseDITATopicAndMapElements"/>
+		</antcall>
+	</target>
+
+	<target name="extractBaseDITATopicElements">
+		<antcall target="generateSVGGraph">
+			<param name="module" value="BaseDITATopicElements"/>
+		</antcall>
+	</target>
+	
+	<target name="extractBaseDITAMapElements">
+		<antcall target="generateSVGGraph">
+			<param name="module" value="BaseDITAMapElements"/>
+		</antcall>
+	</target>
+	
+	<target name="extractDomains">
+		<antcall target="generateGraph">
+			<param name="module" value="Domains"/>
+		</antcall>
+		
+		<xslt basedir="${outputFolder}/gm/domains" includes="*.xml" 
+			style="${stylesFolder}/graphModel2HTML.xsl" destdir="${outputFolder}/gm/domains">
+		</xslt>
+		<xslt basedir="${outputFolder}/gm/domains" includes="*.xml" style="${stylesFolder}/graphModel2DOT.xsl" destdir="${outputFolder}/gm/domains">
+			<mapper from="*.xml" to="*.dot" type="glob"/>
+		</xslt>
+		
+		<apply executable="${dot}">
+			<fileset dir="${outputFolder}/gm/domains" includes="*.dot"/>
+			<arg value="-Tsvg"/>
+			<arg value="-Kfdp"/>
+			<srcfile/>
+			<redirector>
+				<outputmapper type="glob" from="*.dot" to="${outputFolder}/gm/domains/*.svg"/>
+			</redirector>
+		</apply>
+	</target>
+	
+	<target name="extractSpecializations">
+		<antcall target="generateGraph">
+			<param name="module" value="Specializations"/>
+		</antcall>
+		
+		<xslt basedir="${outputFolder}/gm/specializations" includes="*.xml" 
+			style="${stylesFolder}/graphModel2HTML.xsl" destdir="${outputFolder}/gm/specializations">
+		</xslt>
+		<xslt basedir="${outputFolder}/gm/specializations" includes="*.xml" style="${stylesFolder}/graphModel2DOT.xsl" destdir="${outputFolder}/gm/specializations">
+			<mapper from="*.xml" to="*.dot" type="glob"/>
+		</xslt>
+		
+		<apply executable="${dot}">
+			<fileset dir="${outputFolder}/gm/specializations" includes="*.dot"/>
+			<arg value="-Tsvg"/>
+			<arg value="-Kfdp"/>
+			<srcfile/>
+			<redirector>
+				<outputmapper type="glob" from="*.dot" to="${outputFolder}/gm/specializations/*.svg"/>
+			</redirector>
+		</apply>
+	</target>
+	
+	
+	<target name="clean">
+		<delete dir="${outputFolder}/"/>
+	</target>
+
+	<target name="all" depends="copyTemplateResources, 
+		generateCategories, extractShellModulesByGroup, 
+		extractBaseModules, extractModulesHierarchy, 
+		extractBaseDITAElements, extractBaseDITATopicAndMapElements,
+		extractBaseDITATopicElements, extractBaseDITAMapElements, 
+		extractDomains, extractSpecializations"/>
+
+	<target name="fresh" depends="clean, all"/>
+	
+	
+	<target name="dita13">
+		<antcall target="all">
+			<param name="outputFolder" value="../reportDITA13"/>
+			<param name="stylesFolder" value="../frameworks/graphModel/xslt"/>
+			<param name="categoriesStylesheet" value="categories.xsl"/>
+			<param name="outputTemplate" value="../report"/>
+		</antcall>
+	</target>
+	
+	<target name="cleanDita13">
+		<antcall target="clean">
+			<param name="outputFolder" value="../reportDITA13"/>
+		</antcall>
+	</target>
+	
+	<target name="dita20">
+		<antcall target="all">
+			<param name="outputFolder" value="../reportDITA20"/>
+			<param name="stylesFolder" value="../frameworks/graphModel/xslt"/>
+			<param name="categoriesStylesheet" value="categories2.xsl"/>
+			<param name="outputTemplate" value="../report"/>
+		</antcall>
+	</target>
+	<target name="cleanDita20">
+		<antcall target="clean">
+			<param name="outputFolder" value="../reportDITA20"/>
+		</antcall>
+	</target>
+	
+	<target name="cleanReports" depends="cleanDita20, cleanDita13"/>
+	
+	<target name="allReports" depends="dita20, dita13"/>	
+</project>

@@ -1,0 +1,225 @@
+// DITA Domain learning-d
+strict digraph {
+				
+  // Root node
+  
+	"learning-d" [label ="learning-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"note" [label ="note" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcInstructornote" [label ="lcInstructornote" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"lcInteractionBase" [label ="lcInteractionBase" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcTrueFalse" [label ="lcTrueFalse" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcSingleSelect" [label ="lcSingleSelect" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcMultipleSelect" [label ="lcMultipleSelect" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcSequencing" [label ="lcSequencing" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcMatching" [label ="lcMatching" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcHotspot" [label ="lcHotspot" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcOpenQuestion" [label ="lcOpenQuestion" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"lcQuestionBase" [label ="lcQuestionBase" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcQuestion" [label ="lcQuestion" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"p" [label ="p" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcOpenAnswer" [label ="lcOpenAnswer" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcAsset" [label ="lcAsset" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcFeedback" [label ="lcFeedback" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcFeedbackCorrect" [label ="lcFeedbackCorrect" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcFeedbackIncorrect" [label ="lcFeedbackIncorrect" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcAnswerContent" [label ="lcAnswerContent" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"ul" [label ="ul" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcAnswerOptionGroup" [label ="lcAnswerOptionGroup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"ol" [label ="ol" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcSequenceOptionGroup" [label ="lcSequenceOptionGroup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"li" [label ="li" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcSequenceOption" [label ="lcSequenceOption" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcAnswerOption" [label ="lcAnswerOption" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"simpletable" [label ="simpletable" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcMatchTable" [label ="lcMatchTable" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"sthead" [label ="sthead" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcMatchingHeader" [label ="lcMatchingHeader" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"strow" [label ="strow" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcMatchingPair" [label ="lcMatchingPair" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"stentry" [label ="stentry" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcItem" [label ="lcItem" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcMatchingItem" [label ="lcMatchingItem" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcMatchingItemFeedback" [label ="lcMatchingItemFeedback" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"figgroup" [label ="figgroup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcHotspotMap" [label ="lcHotspotMap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcArea" [label ="lcArea" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"keyword" [label ="keyword" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcAreaShape" [label ="lcAreaShape" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"ph" [label ="ph" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcAreaCoords" [label ="lcAreaCoords" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"data" [label ="data" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcCorrectResponse" [label ="lcCorrectResponse" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcSequence" [label ="lcSequence" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"learning-d" -> "note" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"note" -> "lcInstructornote" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "lcInteractionBase" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"lcInteractionBase" -> "lcTrueFalse" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"lcInteractionBase" -> "lcSingleSelect" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"lcInteractionBase" -> "lcMultipleSelect" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"lcInteractionBase" -> "lcSequencing" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"lcInteractionBase" -> "lcMatching" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"lcInteractionBase" -> "lcHotspot" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"lcInteractionBase" -> "lcOpenQuestion" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "lcQuestionBase" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"lcQuestionBase" -> "lcQuestion" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "p" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcOpenAnswer" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcAsset" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcFeedback" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcFeedbackCorrect" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcFeedbackIncorrect" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcAnswerContent" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "ul" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ul" -> "lcAnswerOptionGroup" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "ol" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ol" -> "lcSequenceOptionGroup" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "li" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"li" -> "lcSequenceOption" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"li" -> "lcAnswerOption" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "simpletable" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"simpletable" -> "lcMatchTable" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "sthead" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"sthead" -> "lcMatchingHeader" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "strow" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"strow" -> "lcMatchingPair" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "stentry" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"stentry" -> "lcItem" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"stentry" -> "lcMatchingItem" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"stentry" -> "lcMatchingItemFeedback" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "figgroup" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"figgroup" -> "lcHotspotMap" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"figgroup" -> "lcArea" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "keyword" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"keyword" -> "lcAreaShape" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "ph" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "lcAreaCoords" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learning-d" -> "data" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lcCorrectResponse" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lcSequence" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

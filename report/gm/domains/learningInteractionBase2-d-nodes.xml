@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain learningInteractionBase2-d">
+   <nodes root="learningInteractionBase2-d">
+      <node name="div">
+         <node name="lcInteractionBase2"/>
+         <node name="lcQuestionBase2"/>
+      </node>
+      <node name="p">
+         <node name="lcInteractionLabel2"/>
+      </node>
+   </nodes>
+</graph>

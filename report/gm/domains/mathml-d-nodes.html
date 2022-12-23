@@ -1,0 +1,41 @@
+<!DOCTYPE HTML><html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>DITA Domain mathml-d</title><script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script><style type="text/css">
+                    #mynetwork {
+                        width: 90%;
+                        height: 700px;
+                        border: 1px solid lightgray;
+                    }</style>
+   </head>
+   <body>
+      <div id="mynetwork"></div><script type="text/javascript">
+var nodes = new vis.DataSet([
+{ id: 0, label: "mathml-d" },
+{ id: 1, label: "xref" },
+{ id: 2, label: "mathmlref" },
+{ id: 3, label: "foreign" },
+{ id: 4, label: "mathml" },
+]);
+
+var edges = new vis.DataSet([
+{ from: 0, to: 1, arrows: "to" },
+{ from: 1, to: 2, arrows: "to" },
+{ from: 0, to: 3, arrows: "to" },
+{ from: 3, to: 4, arrows: "to" },
+]);
+// create a network
+var container = document.getElementById("mynetwork");
+var data = {
+nodes: nodes,
+edges: edges,
+};
+var options = {
+  nodes:{
+      shape: 'box',
+      widthConstraint: 200,
+  }
+};
+var network = new vis.Network(container, data, options);
+				</script></body>
+</html>

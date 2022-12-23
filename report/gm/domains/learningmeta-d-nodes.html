@@ -1,0 +1,69 @@
+<!DOCTYPE HTML><html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>DITA Domain learningmeta-d</title><script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script><style type="text/css">
+                    #mynetwork {
+                        width: 90%;
+                        height: 700px;
+                        border: 1px solid lightgray;
+                    }</style>
+   </head>
+   <body>
+      <div id="mynetwork"></div><script type="text/javascript">
+var nodes = new vis.DataSet([
+{ id: 0, label: "learningmeta-d" },
+{ id: 1, label: "metadata" },
+{ id: 2, label: "lcLom" },
+{ id: 3, label: "data" },
+{ id: 4, label: "lomStructure" },
+{ id: 5, label: "lomCoverage" },
+{ id: 6, label: "lomAggregationLevel" },
+{ id: 7, label: "lomTechRequirement" },
+{ id: 8, label: "lomInstallationRemarks" },
+{ id: 9, label: "lomOtherPlatformRequirements" },
+{ id: 10, label: "lomInteractivityType" },
+{ id: 11, label: "lomLearningResourceType" },
+{ id: 12, label: "lomInteractivityLevel" },
+{ id: 13, label: "lomSemanticDensity" },
+{ id: 14, label: "lomIntendedUserRole" },
+{ id: 15, label: "lomContext" },
+{ id: 16, label: "lomTypicalAgeRange" },
+{ id: 17, label: "lomDifficulty" },
+{ id: 18, label: "lomTypicalLearningTime" },
+]);
+
+var edges = new vis.DataSet([
+{ from: 0, to: 1, arrows: "to" },
+{ from: 1, to: 2, arrows: "to" },
+{ from: 0, to: 3, arrows: "to" },
+{ from: 3, to: 4, arrows: "to" },
+{ from: 3, to: 5, arrows: "to" },
+{ from: 3, to: 6, arrows: "to" },
+{ from: 3, to: 7, arrows: "to" },
+{ from: 3, to: 8, arrows: "to" },
+{ from: 3, to: 9, arrows: "to" },
+{ from: 3, to: 10, arrows: "to" },
+{ from: 3, to: 11, arrows: "to" },
+{ from: 3, to: 12, arrows: "to" },
+{ from: 3, to: 13, arrows: "to" },
+{ from: 3, to: 14, arrows: "to" },
+{ from: 3, to: 15, arrows: "to" },
+{ from: 3, to: 16, arrows: "to" },
+{ from: 3, to: 17, arrows: "to" },
+{ from: 3, to: 18, arrows: "to" },
+]);
+// create a network
+var container = document.getElementById("mynetwork");
+var data = {
+nodes: nodes,
+edges: edges,
+};
+var options = {
+  nodes:{
+      shape: 'box',
+      widthConstraint: 200,
+  }
+};
+var network = new vis.Network(container, data, options);
+				</script></body>
+</html>

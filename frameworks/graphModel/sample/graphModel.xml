@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="Diagram connecting group folders to modules defined in that group">
+	<nodes root="DITA">
+		<node name="group_bookmap" label="bookmap">
+			<node name="bookmap"/>
+		</node>
+		<node name="group_learning" label="learning">
+			<node name="learningObjectMap"/>
+			<node name="learningBookmap"/>
+			<node name="Learning overview"/>
+			<node name="learningSummary"/>
+			<node name="learningMap"/>
+			<node name="learningAssessment"/>
+			<node name="learningGroupMap"/>
+			<node name="learningPlan"/>
+			<node name="learningContent"/>
+		</node>
+		<node name="group_technicalContent" label="technicalContent">
+			<node name="troubleshooting"/>
+			<node name="concept"/>
+			<node name="ditabase"/>
+			<node name="topic"/>
+			<node name="glossary"/>
+			<node name="glossgroup"/>
+			<node name="map"/>
+			<node name="Glossary Entry"/>
+			<node name="reference"/>
+			<node name="task"/>
+			<node name="General Task"/>
+		</node>
+		<node name="group_xnal" label="xnal"/>
+		<node name="group_machineryIndustry" label="machineryIndustry">
+			<node name="Machinery Task"/>
+		</node>
+		<node name="group_base" label="base">
+			<node name="basemap"/>
+			<node name="Base topic"/>
+		</node>
+		<node name="group_subjectScheme" label="subjectScheme">
+			<node name="subjectScheme"/>
+			<node name="classifyMap"/>
+		</node>
+	</nodes>
+</graph>

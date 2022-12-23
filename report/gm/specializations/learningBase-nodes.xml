@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Specialization learningBase">
+   <nodes root="learningBaseModule">
+      <node name="topic">
+         <node name="learningBase"/>
+      </node>
+      <node name="body">
+         <node name="learningBasebody"/>
+      </node>
+      <node name="section">
+         <node name="lcIntro"/>
+         <node name="lcObjectives"/>
+         <node name="lcAudience"/>
+         <node name="lcDuration"/>
+         <node name="lcPrereqs"/>
+         <node name="lcSummary"/>
+         <node name="lcNextSteps"/>
+         <node name="lcReview"/>
+         <node name="lcResources"/>
+         <node name="lcChallenge"/>
+         <node name="lcInstruction"/>
+         <node name="lcInteraction"/>
+      </node>
+      <node name="ph">
+         <node name="lcObjectivesStem"/>
+      </node>
+      <node name="ul">
+         <node name="lcObjectivesGroup"/>
+      </node>
+      <node name="li">
+         <node name="lcObjective"/>
+      </node>
+      <node name="data">
+         <node name="lcTime"/>
+      </node>
+   </nodes>
+</graph>

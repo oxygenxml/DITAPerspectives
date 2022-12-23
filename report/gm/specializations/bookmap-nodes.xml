@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Specialization bookmap">
+   <nodes root="bookmapModule">
+      <node name="map">
+         <node name="bookmap"/>
+      </node>
+      <node name="topicmeta">
+         <node name="bookmeta"/>
+      </node>
+      <node name="topicref">
+         <node name="frontmatter"/>
+         <node name="backmatter"/>
+         <node name="draftintro"/>
+         <node name="bookabstract"/>
+         <node name="dedication"/>
+         <node name="preface"/>
+         <node name="chapter"/>
+         <node name="part"/>
+         <node name="appendix"/>
+         <node name="appendices"/>
+         <node name="notices"/>
+         <node name="amendments"/>
+         <node name="colophon"/>
+         <node name="booklists"/>
+         <node name="toc"/>
+         <node name="figurelist"/>
+         <node name="tablelist"/>
+         <node name="abbrevlist"/>
+         <node name="trademarklist"/>
+         <node name="bibliolist"/>
+         <node name="glossarylist"/>
+         <node name="indexlist"/>
+         <node name="booklist"/>
+      </node>
+      <node name="publisher">
+         <node name="publisherinformation"/>
+      </node>
+      <node name="data">
+         <node name="person"/>
+         <node name="organization"/>
+         <node name="bookchangehistory"/>
+         <node name="bookid"/>
+         <node name="printlocation"/>
+         <node name="published"/>
+         <node name="publishtype"/>
+         <node name="reviewed"/>
+         <node name="edited"/>
+         <node name="tested"/>
+         <node name="approved"/>
+         <node name="bookevent"/>
+         <node name="bookeventtype"/>
+         <node name="bookpartno"/>
+         <node name="edition"/>
+         <node name="isbn"/>
+         <node name="booknumber"/>
+         <node name="volume"/>
+         <node name="maintainer"/>
+         <node name="bookrights"/>
+         <node name="copyrfirst"/>
+         <node name="copyrlast"/>
+         <node name="bookowner"/>
+         <node name="bookrestriction"/>
+      </node>
+      <node name="ph">
+         <node name="summary"/>
+         <node name="revisionid"/>
+         <node name="started"/>
+         <node name="completed"/>
+         <node name="year"/>
+         <node name="month"/>
+         <node name="day"/>
+         <node name="booklibrary"/>
+         <node name="mainbooktitle"/>
+         <node name="booktitlealt"/>
+      </node>
+      <node name="title">
+         <node name="booktitle"/>
+      </node>
+   </nodes>
+</graph>

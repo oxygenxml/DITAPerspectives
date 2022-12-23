@@ -1,0 +1,45 @@
+// DITA Domain equation-d
+strict digraph {
+				
+  // Root node
+  
+	"equation-d" [label ="equation-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"ph" [label ="ph" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"equation-inline" [label ="equation-inline" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"equation-number" [label ="equation-number" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"div" [label ="div" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"equation-block" [label ="equation-block" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"fig" [label ="fig" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"equation-figure" [label ="equation-figure" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"equation-d" -> "ph" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "equation-inline" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "equation-number" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"equation-d" -> "div" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"div" -> "equation-block" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"equation-d" -> "fig" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "equation-figure" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

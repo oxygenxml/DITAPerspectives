@@ -1,0 +1,16 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT graph (nodes)>
+<!ATTLIST graph
+  
+  description CDATA #REQUIRED>
+
+<!ELEMENT nodes (node)*>
+<!ATTLIST nodes
+  
+  root NMTOKEN #IMPLIED>
+
+<!ELEMENT node (node)*>
+<!ATTLIST node
+  label CDATA #IMPLIED
+  name CDATA #REQUIRED>

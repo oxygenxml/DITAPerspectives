@@ -1,0 +1,273 @@
+// DITA Specialization learningPlan
+strict digraph {
+				
+  // Root node
+  
+	"learningPlanModule" [label ="learningPlanModule" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"learningBase" [label ="learningBase" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"learningPlan" [label ="learningPlan" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"learningBasebody" [label ="learningBasebody" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"learningPlanbody" [label ="learningPlanbody" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"section" [label ="section" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcProject" [label ="lcProject" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcNeedsAnalysis" [label ="lcNeedsAnalysis" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcGapAnalysis" [label ="lcGapAnalysis" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcIntervention" [label ="lcIntervention" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcTechnical" [label ="lcTechnical" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"fig" [label ="fig" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcClient" [label ="lcClient" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcPlanTitle" [label ="lcPlanTitle" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcCIN" [label ="lcCIN" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcModDate" [label ="lcModDate" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcDelivDate" [label ="lcDelivDate" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcPlanSubject" [label ="lcPlanSubject" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcPlanDescrip" [label ="lcPlanDescrip" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcPlanPrereqs" [label ="lcPlanPrereqs" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcOrganizational" [label ="lcOrganizational" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcPlanAudience" [label ="lcPlanAudience" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcWorkEnv" [label ="lcWorkEnv" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcTask" [label ="lcTask" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcGapItem" [label ="lcGapItem" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcInterventionItem" [label ="lcInterventionItem" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcLMS" [label ="lcLMS" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcNoLMS" [label ="lcNoLMS" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcHandouts" [label ="lcHandouts" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcClassroom" [label ="lcClassroom" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcOJT" [label ="lcOJT" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcConstraints" [label ="lcConstraints" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcW3C" [label ="lcW3C" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcPlayers" [label ="lcPlayers" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcGraphics" [label ="lcGraphics" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcViewers" [label ="lcViewers" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcResolution" [label ="lcResolution" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcFileSizeLimitations" [label ="lcFileSizeLimitations" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcDownloadTime" [label ="lcDownloadTime" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcSecurity" [label ="lcSecurity" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"p" [label ="p" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcGeneralDescription" [label ="lcGeneralDescription" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcGoals" [label ="lcGoals" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcNeeds" [label ="lcNeeds" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcValues" [label ="lcValues" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcOrgConstraints" [label ="lcOrgConstraints" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcEdLevel" [label ="lcEdLevel" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcAge" [label ="lcAge" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcBackground" [label ="lcBackground" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcSkills" [label ="lcSkills" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcKnowledge" [label ="lcKnowledge" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcMotivation" [label ="lcMotivation" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcSpecChars" [label ="lcSpecChars" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcWorkEnvDescription" [label ="lcWorkEnvDescription" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcPlanResources" [label ="lcPlanResources" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcProcesses" [label ="lcProcesses" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcTaskItem" [label ="lcTaskItem" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcAttitude" [label ="lcAttitude" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcPlanObjective" [label ="lcPlanObjective" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcJtaItem" [label ="lcJtaItem" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcGapItemDelta" [label ="lcGapItemDelta" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcLearnStrat" [label ="lcLearnStrat" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcAssessment" [label ="lcAssessment" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lcDelivery" [label ="lcDelivery" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"learningPlanModule" -> "learningBase" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"learningBase" -> "learningPlan" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learningPlanModule" -> "learningBasebody" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"learningBasebody" -> "learningPlanbody" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learningPlanModule" -> "section" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcProject" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcNeedsAnalysis" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcGapAnalysis" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcIntervention" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "lcTechnical" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learningPlanModule" -> "fig" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcClient" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcPlanTitle" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcCIN" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcModDate" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcDelivDate" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcPlanSubject" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcPlanDescrip" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcPlanPrereqs" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcOrganizational" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcPlanAudience" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcWorkEnv" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcTask" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcGapItem" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcInterventionItem" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcLMS" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcNoLMS" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcHandouts" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcClassroom" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcOJT" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcConstraints" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcW3C" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcPlayers" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcGraphics" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcViewers" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcResolution" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcFileSizeLimitations" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcDownloadTime" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "lcSecurity" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learningPlanModule" -> "p" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcGeneralDescription" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcGoals" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcNeeds" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcValues" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcOrgConstraints" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcEdLevel" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcAge" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcBackground" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcSkills" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcKnowledge" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcMotivation" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcSpecChars" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcWorkEnvDescription" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcPlanResources" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcProcesses" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcTaskItem" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcAttitude" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcPlanObjective" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcJtaItem" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcGapItemDelta" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcLearnStrat" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcAssessment" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"p" -> "lcDelivery" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

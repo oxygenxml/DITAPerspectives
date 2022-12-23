@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain relmgmt-d">
+   <nodes root="relmgmt-d">
+      <node name="metadata">
+         <node name="change-historylist"/>
+      </node>
+      <node name="data">
+         <node name="change-item"/>
+         <node name="change-person"/>
+         <node name="change-organization"/>
+         <node name="change-revisionid"/>
+         <node name="change-request-reference"/>
+         <node name="change-request-system"/>
+         <node name="change-request-id"/>
+         <node name="change-started"/>
+         <node name="change-completed"/>
+         <node name="change-summary"/>
+      </node>
+   </nodes>
+</graph>

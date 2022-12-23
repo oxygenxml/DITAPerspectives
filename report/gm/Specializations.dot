@@ -1,0 +1,76 @@
+// DITA Specializations
+strict digraph {
+			
+  // Other nodes
+      
+	"specializations" [label ="Specializations | 16" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"bookmap" [label ="bookmap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"learningSummary" [label ="learningSummary" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"learningPlan" [label ="learningPlan" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"learningOverview" [label ="learningOverview" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"learningContent" [label ="learningContent" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"learningObjectMap" [label ="learningObjectMap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"learningBase" [label ="learningBase" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"learningGroupMap" [label ="learningGroupMap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"learningAssessment" [label ="learningAssessment" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"troubleshooting" [label ="troubleshooting" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"reference" [label ="reference" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"task" [label ="task" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"glossentry" [label ="glossentry" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"glossgroup" [label ="glossgroup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"concept" [label ="concept" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"subjectScheme" [label ="subjectScheme" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+         
+	"specializations" -> "bookmap" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "learningSummary" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "learningPlan" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "learningOverview" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "learningContent" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "learningObjectMap" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "learningBase" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "learningGroupMap" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "learningAssessment" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "troubleshooting" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "reference" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "task" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "glossentry" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "glossgroup" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "concept" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"specializations" -> "subjectScheme" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

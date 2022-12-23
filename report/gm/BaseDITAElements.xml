@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Stats">
+   <nodes>
+      <node name="elements" label="DITA elements | 616">
+         <node name="baseElements" label="base elements | 119">
+            <node name="map"/>
+            <node name="navref"/>
+            <node name="topicref"/>
+            <node name="anchor"/>
+            <node name="reltable"/>
+            <node name="relheader"/>
+            <node name="relcolspec"/>
+            <node name="relrow"/>
+            <node name="relcell"/>
+            <node name="topicmeta"/>
+            <node name="shortdesc"/>
+            <node name="linktext"/>
+            <node name="searchtitle"/>
+            <node name="ux-window"/>
+            <node name="author"/>
+            <node name="source"/>
+            <node name="publisher"/>
+            <node name="copyright"/>
+            <node name="copyryear"/>
+            <node name="copyrholder"/>
+            <node name="critdates"/>
+            <node name="created"/>
+            <node name="revised"/>
+            <node name="permissions"/>
+            <node name="category"/>
+            <node name="metadata"/>
+            <node name="audience"/>
+            <node name="keywords"/>
+            <node name="prodinfo"/>
+            <node name="prodname"/>
+            <node name="vrmlist"/>
+            <node name="vrm"/>
+            <node name="brand"/>
+            <node name="series"/>
+            <node name="platform"/>
+            <node name="prognum"/>
+            <node name="featnum"/>
+            <node name="component"/>
+            <node name="othermeta"/>
+            <node name="resourceid"/>
+            <node name="table"/>
+            <node name="tgroup"/>
+            <node name="colspec"/>
+            <node name="thead"/>
+            <node name="tbody"/>
+            <node name="row"/>
+            <node name="entry"/>
+            <node name="data-about"/>
+            <node name="data"/>
+            <node name="unknown"/>
+            <node name="foreign"/>
+            <node name="title"/>
+            <node name="navtitle"/>
+            <node name="desc"/>
+            <node name="p"/>
+            <node name="note"/>
+            <node name="longquoteref"/>
+            <node name="lq"/>
+            <node name="q"/>
+            <node name="sl"/>
+            <node name="sli"/>
+            <node name="ul"/>
+            <node name="ol"/>
+            <node name="li"/>
+            <node name="itemgroup"/>
+            <node name="dl"/>
+            <node name="dlhead"/>
+            <node name="dthd"/>
+            <node name="ddhd"/>
+            <node name="dlentry"/>
+            <node name="dt"/>
+            <node name="dd"/>
+            <node name="fig"/>
+            <node name="figgroup"/>
+            <node name="pre"/>
+            <node name="lines"/>
+            <node name="div"/>
+            <node name="text"/>
+            <node name="keyword"/>
+            <node name="term"/>
+            <node name="ph"/>
+            <node name="tm"/>
+            <node name="boolean"/>
+            <node name="state"/>
+            <node name="image"/>
+            <node name="alt"/>
+            <node name="longdescref"/>
+            <node name="object"/>
+            <node name="param"/>
+            <node name="simpletable"/>
+            <node name="sthead"/>
+            <node name="strow"/>
+            <node name="stentry"/>
+            <node name="draft-comment"/>
+            <node name="required-cleanup"/>
+            <node name="fn"/>
+            <node name="indexterm"/>
+            <node name="index-base"/>
+            <node name="indextermref"/>
+            <node name="cite"/>
+            <node name="xref"/>
+            <node name="topic"/>
+            <node name="titlealts"/>
+            <node name="searchtitle"/>
+            <node name="shortdesc"/>
+            <node name="abstract"/>
+            <node name="body"/>
+            <node name="bodydiv"/>
+            <node name="no-topic-nesting"/>
+            <node name="section"/>
+            <node name="sectiondiv"/>
+            <node name="example"/>
+            <node name="prolog"/>
+            <node name="related-links"/>
+            <node name="link"/>
+            <node name="linktext"/>
+            <node name="linklist"/>
+            <node name="linkinfo"/>
+            <node name="linkpool"/>
+         </node>
+         <node name="otherElements" label="specialized elements | 497"/>
+         <node name="duplicateElements" label="duplicate elements | 3">
+            <node name="searchtitle">
+               <node name="class = '- map/searchtitle'"/>
+               <node name="class = '- topic/searchtitle'"/>
+            </node>
+            <node name="shortdesc">
+               <node name="class = '- map/shortdesc'"/>
+               <node name="class = '- topic/shortdesc'"/>
+            </node>
+            <node name="linktext">
+               <node name="class = '- map/linktext'"/>
+               <node name="class = '- topic/linktext'"/>
+            </node>
+         </node>
+      </node>
+   </nodes>
+</graph>
