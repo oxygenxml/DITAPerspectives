@@ -10,7 +10,7 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>reportDITA20/DITA%20Perspectives.ditamap</String>
+                                    <String>sample-generated-reports/DITA20/DITA%20Perspectives.ditamap</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -30,7 +30,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>reportDITA13/DITA%20Perspectives.ditamap</String>
+                                    <String>sample-generated-reports/DITA13/DITA%20Perspectives.ditamap</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -122,7 +122,7 @@
                                     <String></String>
                                 </field>
                                 <field name="workingDir">
-                                    <String>${cfd}</String>
+                                    <String>${pd}/scripts</String>
                                 </field>
                                 <field name="showConsoleAlways">
                                     <Boolean>true</Boolean>
