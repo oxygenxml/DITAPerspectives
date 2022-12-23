@@ -10,8 +10,8 @@ from the contextual menu.
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.oxygenxml.com/ns/framework/extend http://www.oxygenxml.com/ns/framework/extend/frameworkExtensionScript.xsd"
   base="DITA">
-  <name>DITA3</name>
-  <description/>
+  <name>DITA Soft Generalization</name>
+  <description>Provide toolbar buttons to show for each opened DITA topic opened in the Author mode the generalized and intermediary element names.</description>
   <priority>High</priority>
   
 	<author>
