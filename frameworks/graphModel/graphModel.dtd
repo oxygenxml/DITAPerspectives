@@ -8,7 +8,7 @@
 <!ELEMENT nodes (node)*>
 <!ATTLIST nodes
   
-  root NMTOKEN #IMPLIED>
+  root CDATA #IMPLIED>
 
 <!ELEMENT node (node)*>
 <!ATTLIST node
