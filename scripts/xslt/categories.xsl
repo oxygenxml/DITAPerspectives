@@ -13,7 +13,7 @@
 	version="2.0">
 	
 	<xsl:output indent="yes"/>
-	<xsl:param name="relax" select="'../data/DITA1.3/rng/'"/>
+	<xsl:param name="relax" select="'../../data/DITA1.3/rng/'"/>
 	<xsl:variable name="basePath" select="resolve-uri($relax, base-uri(doc('')))"/>
 	
 	<xsl:template match="/">
