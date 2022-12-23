@@ -5,7 +5,7 @@
 	<property name="baseXSLFolder" value="xslt"/>
 	<property name="stylesFolder" value="../frameworks/graphModel/xslt"/>
 	<property name="categoriesStylesheet" value="${baseXSLFolder}/categories.xsl"/>
-	<property name="outputTemplate" value="../report"/>
+	<property name="outputTemplate" value="../report-template"/>
 	
 	<property name="dot" value="/usr/local/bin/dot"/>
 	
@@ -148,7 +148,7 @@
 			<param name="outputFolder" value="../reportDITA13"/>
 			<param name="stylesFolder" value="../frameworks/graphModel/xslt"/>
 			<param name="categoriesStylesheet" value="${baseXSLFolder}/categories.xsl"/>
-			<param name="outputTemplate" value="../report"/>
+			<param name="outputTemplate" value="../report-template"/>
 		</antcall>
 	</target>
 	
@@ -163,7 +163,7 @@
 			<param name="outputFolder" value="../reportDITA20"/>
 			<param name="stylesFolder" value="../frameworks/graphModel/xslt"/>
 			<param name="categoriesStylesheet" value="${baseXSLFolder}/categories2.xsl"/>
-			<param name="outputTemplate" value="../report"/>
+			<param name="outputTemplate" value="../report-template"/>
 		</antcall>
 	</target>
 	<target name="cleanDita20">
