@@ -52,7 +52,6 @@
             <topic id="topic_{generate-id($root)}">
                 <title><xsl:value-of select="$module"/></title>
                 <body>
-                    <p>Defined in <xsl:value-of select="$schemas" separator="', '"/></p>
                     <p><image href="../specializations/{$module}-nodes.svg" scale="40" id="image_{generate-id($root)}"/></p>
                 </body>
             </topic>
