@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<graph description="DITA Specialization learningGroupMap">
-   <nodes root="learningGroupMapModule">
-      <node name="map">
-         <node name="learningGroupMap"/>
-      </node>
-   </nodes>
-</graph>
