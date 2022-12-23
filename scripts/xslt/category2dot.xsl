@@ -13,13 +13,8 @@
 
     <xsl:output method="text"/>
 
-		
-
 	<xsl:template match="/">
 		<xsl:variable name="root" select="/"/>
-		
-		
-		
 		<xsl:for-each select="/categories/group">
 			<xsl:variable name="group" select="@name"/>
 			<xsl:result-document href="./dot/{$group}.dot">
@@ -30,16 +25,14 @@
 			</xsl:result-document>
 		</xsl:for-each>
 	</xsl:template>
-		
-	
-		<xsl:template match="*" mode="defineNodes">
-			<xsl:apply-templates mode="#current"/>
-		</xsl:template>
-		<xsl:template match="text()" mode="defineNodes"/>
-		<xsl:template match="element" mode="defineNodes">
-			<xsl:text expand-text="true">
-	"{@name}"[fontname="Arial" shape="Mrecord" label ="{{ {@name} | {@module} }}" style="filled"  fillcolor="#1f77b4"]</xsl:text>
-		</xsl:template>
+	<xsl:template match="*" mode="defineNodes">
+		<xsl:apply-templates mode="#current"/>
+	</xsl:template>
+	<xsl:template match="text()" mode="defineNodes"/>
+	<xsl:template match="element" mode="defineNodes">
+		<xsl:text expand-text="true">
+			"{@name}"[fontname="Arial" shape="Mrecord" label ="{{ {@name} | {@module} }}" style="filled"  fillcolor="#1f77b4"]</xsl:text>
+	</xsl:template>
 	
 	<xsl:template match="*" mode="defineEdges">
 		<xsl:apply-templates mode="#current"/>
@@ -49,7 +42,4 @@
 		<xsl:text expand-text="true">
 	"{@name}" -> "{@parent}"[fillcolor="#a6cee3" color="#1f78b4"]</xsl:text>
 	</xsl:template>
-	
-	
-	
 </xsl:stylesheet>

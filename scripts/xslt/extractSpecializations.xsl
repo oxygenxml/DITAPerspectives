@@ -14,7 +14,7 @@
 
     <xsl:template match="/">
         <xsl:variable name="structuralElements" select="//element[@elementType='structural']"/>
-        <xsl:variable name="structuralModules" select="distinct-values(//element[@elementType='structural']/@module[not(.=('topic', 'map'))])"/>
+        <xsl:variable name="structuralModules" select="distinct-values($structuralElements/@module[not(.=('topic', 'map'))])"/>
         <graph description="DITA Specializations">
             <nodes>
                 <node name="specializations" label="Specializations | {count($structuralModules)}">
@@ -58,11 +58,7 @@
             </topic>
         </xsl:result-document>
         
-        
         <xsl:result-document href="specializations/{$module}-nodes.xml">
-            
-            
-            
             <graph description="DITA Specialization {$module}">
                 <nodes root="{$module}Module"> 
                     <xsl:for-each-group select="$structuralElements" group-by="@parent">
@@ -75,13 +71,7 @@
                 </nodes>
             </graph>
         </xsl:result-document>
-        
-        
-        
     </xsl:template>
 
-
     <xsl:template match="text()"/>
-
-
 </xsl:stylesheet>

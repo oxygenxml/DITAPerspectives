@@ -12,20 +12,9 @@
 	exclude-result-prefixes="xs rng a oxy arch"
 	version="2.0">
 	
-	
-	
-	
-	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
-		<xd:desc/>
-	</xd:doc>
-	
 	<xsl:output indent="yes"/>
 	<xsl:param name="relax" select="'../data/DITA2.0/'"/>
 	<xsl:variable name="basePath" select="resolve-uri($relax, base-uri(doc('')))"/>
-	
-	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
-		<xd:desc/>
-	</xd:doc>
 	
 	<xsl:template match="/">
 		<xsl:call-template name="main"/>
@@ -69,7 +58,6 @@
 		</xsl:copy>
 	</xsl:template>
 	
-	
 	<!-- 
 		Generate attributes containing parsed information from the class attribute	
 		of an element, extracting the module, the parent module and the parent element 
@@ -99,9 +87,6 @@
 		</xsl:if>
 	</xsl:template>
 	
-	
-	
-	
 	<xsl:function name="oxy:getClassAtt">
 		<xsl:param name="context"/>
 		<xsl:param name="element"/>
@@ -109,8 +94,6 @@
 		<xsl:value-of  
 			select="normalize-space($context//rng:define[@name=$attlist]/rng:optional/rng:attribute[@name='class']/@a:defaultValue)"/>
 	</xsl:function>
-	
-	
 	<xsl:template name="copyDocumentation">
 		<xsl:choose>
 			<xsl:when test="*[1][self::a:documentation]">

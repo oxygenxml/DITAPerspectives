@@ -12,8 +12,6 @@
     version="3.0">
 
     <xsl:output method="text"/>
-    
-    
     <xsl:template match="/">
     	<xsl:variable name="root" select="/"/>
     	<xsl:variable name="modules" select="distinct-values(//element/@module)"/>
@@ -22,8 +20,6 @@
     	<xsl:text>// </xsl:text>
     	<xsl:value-of select="$allModules"/>
     	<xsl:text>&#10;</xsl:text>
-
-
     	<xsl:text>strict digraph {</xsl:text>
 			<!-- Nodes   		-->
     	<xsl:for-each select="$allModules">

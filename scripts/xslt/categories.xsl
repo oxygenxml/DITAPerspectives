@@ -12,20 +12,9 @@
 	exclude-result-prefixes="xs rng a oxy arch"
 	version="2.0">
 	
-	
-	
-	
-	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
-		<xd:desc/>
-	</xd:doc>
-	
 	<xsl:output indent="yes"/>
 	<xsl:param name="relax" select="'../data/DITA1.3/rng/'"/>
 	<xsl:variable name="basePath" select="resolve-uri($relax, base-uri(doc('')))"/>
-	
-	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
-		<xd:desc/>
-	</xd:doc>
 	
 	<xsl:template match="/">
 		<xsl:call-template name="main"/>
@@ -99,9 +88,6 @@
 			<xsl:attribute name="elementLevel" select="count($classTokens) - 1"/>
 		</xsl:if>
 	</xsl:template>
-	
-	
-	
 	
 	<xsl:function name="oxy:getClassAtt">
 		<xsl:param name="context"/>

@@ -9,8 +9,6 @@
     xmlns:oxy="http://www.oxygenxml.com/oxy" exclude-result-prefixes="xs rng a oxy" version="3.0">
 
     <xsl:output method="xml" indent="true"/>
-
-
     <xsl:template match="/">
         <xsl:variable name="totalElementsNumber" select="count(//element)"/>
         <xsl:variable name="baseElements" select="//element[count(tokenize(@class))=2]"/>
@@ -42,9 +40,5 @@
             </nodes>
         </graph>
     </xsl:template>
-
-
     <xsl:template match="text()"/>
-
-
 </xsl:stylesheet>

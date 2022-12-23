@@ -14,7 +14,7 @@
 
     <xsl:template match="/">
         <xsl:variable name="domainElements" select="//element[@elementType='domain']"/>
-        <xsl:variable name="domains" select="distinct-values(//element[@elementType='domain']/@module)"/>
+        <xsl:variable name="domains" select="distinct-values($domainElements/@module)"/>
         <graph description="DITA Domains">
             <nodes>
                 <node name="domains" label="Domanins | {count($domains)}">
@@ -46,7 +46,6 @@
         <xsl:variable name="domainElements" select="$root//element[@module=$domain]"/>
         <xsl:variable name="parents" select="distinct-values($domainElements/@parent)"/>
         
-        
         <xsl:result-document href="topics/{$domain}.dita" doctype-public="-//OASIS//DTD DITA Topic//EN" doctype-system="topic.dtd">
             <xsl:variable name="schema" select="doc($root//(element[@module=$domain])[1]/@definedIn)"/>
             <topic id="topic_{generate-id($root)}">
@@ -59,9 +58,6 @@
         
         
         <xsl:result-document href="domains/{$domain}-nodes.xml">
-            
-            
-            
             <graph description="DITA Domain {$domain}">
                 <nodes root="{$domain}"> 
                     <xsl:for-each-group select="$domainElements" group-by="@parent">
@@ -74,13 +70,8 @@
                 </nodes>
             </graph>
         </xsl:result-document>
-        
-        
-        
     </xsl:template>
 
 
     <xsl:template match="text()"/>
-
-
 </xsl:stylesheet>

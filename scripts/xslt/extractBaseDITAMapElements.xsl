@@ -10,7 +10,6 @@
 
     <xsl:output method="xml" indent="true"/>
 
-
     <xsl:template match="/">
         <xsl:variable name="mapElements" select="//element[starts-with(tokenize(@class)[2], 'map/')]"/>
         
@@ -33,9 +32,5 @@
             </nodes>
         </graph>
     </xsl:template>
-
-
     <xsl:template match="text()"/>
-
-
 </xsl:stylesheet>

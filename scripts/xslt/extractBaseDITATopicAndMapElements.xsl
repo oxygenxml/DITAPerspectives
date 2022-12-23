@@ -10,7 +10,6 @@
 
     <xsl:output method="xml" indent="true"/>
 
-
     <xsl:template match="/">
         <xsl:variable name="topicElements" select="//element[starts-with(tokenize(@class)[2], 'topic/')]"/>
         
@@ -28,9 +27,6 @@
         <xsl:variable name="baseMapElements" select="$mapElements[count(tokenize(@class))=2]"/>
         <xsl:variable name="baseMapElementsNumber" select="count($baseMapElements)"/>
         <xsl:variable name="otherMapElementsNumber" select="$totalMapElementsNumber - $baseMapElementsNumber"/>
-        
-        
-        
         
         <graph description="DITA Topic and Map Stats">
             <nodes root="DITA elements">
@@ -52,11 +48,6 @@
                 </node>
             </nodes>
         </graph>
-        
     </xsl:template>
-
-
     <xsl:template match="text()"/>
-
-
 </xsl:stylesheet>

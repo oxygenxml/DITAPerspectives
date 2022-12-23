@@ -10,10 +10,8 @@
 
     <xsl:output method="xml" indent="true"/>
 
-
     <xsl:template match="/">
         <xsl:variable name="root" select="/"/>
-
 
         <xsl:variable name="topModules" 
             select="distinct-values(
@@ -29,17 +27,5 @@
         </graph>
     </xsl:template>
 
-
-
-
-
-
-
-
     <xsl:template match="text()"/>
-
-
-
-
-
 </xsl:stylesheet>

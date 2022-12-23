@@ -10,10 +10,8 @@
 
     <xsl:output method="xml" indent="true"/>
 
-
     <xsl:template match="/">
         <xsl:variable name="topicElements" select="//element[starts-with(tokenize(@class)[2], 'topic/')]"/>
-        
         
         <xsl:variable name="totalElementsNumber" select="count($topicElements)"/>
         <xsl:variable name="baseTopicElements" select="$topicElements[count(tokenize(@class))=2]"/>
@@ -33,9 +31,5 @@
             </nodes>
         </graph>
     </xsl:template>
-
-
     <xsl:template match="text()"/>
-
-
 </xsl:stylesheet>

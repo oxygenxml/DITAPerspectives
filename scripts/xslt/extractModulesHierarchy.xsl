@@ -10,7 +10,6 @@
     
     <xsl:output method="xml" indent="true"/>
     
-    
     <xsl:template match="/">
         <xsl:variable name="root" select="/"/>
 
