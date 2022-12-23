@@ -1,0 +1,31 @@
+// DITA Specialization learningSummary
+strict digraph {
+				
+  // Root node
+  
+	"learningSummaryModule" [label ="learningSummaryModule" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"learningBase" [label ="learningBase" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"learningSummary" [label ="learningSummary" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"learningBasebody" [label ="learningBasebody" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"learningSummarybody" [label ="learningSummarybody" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"learningSummaryModule" -> "learningBase" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"learningBase" -> "learningSummary" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learningSummaryModule" -> "learningBasebody" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"learningBasebody" -> "learningSummarybody" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

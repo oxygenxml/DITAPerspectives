@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domains">
+   <nodes>
+      <node name="domains" label="Domanins | 22">
+         <node name="abbrev-d"/>
+         <node name="markup-d"/>
+         <node name="mathml-d"/>
+         <node name="syntaxdiagram-d"/>
+         <node name="hw-d"/>
+         <node name="svg-d"/>
+         <node name="ui-d"/>
+         <node name="equation-d"/>
+         <node name="pr-d"/>
+         <node name="xml-d"/>
+         <node name="glossref-d"/>
+         <node name="sw-d"/>
+         <node name="relmgmt-d"/>
+         <node name="xnal-d"/>
+         <node name="ditavalref-d"/>
+         <node name="hazard-d"/>
+         <node name="emphasis-d"/>
+         <node name="hi-d"/>
+         <node name="mapgroup-d"/>
+         <node name="alternativeTitles-d"/>
+         <node name="ut-d"/>
+         <node name="classify-d"/>
+      </node>
+   </nodes>
+</graph>

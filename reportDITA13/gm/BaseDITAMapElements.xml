@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Map Stats">
+   <nodes>
+      <node name="elements" label="DITA map elements | 87">
+         <node name="baseMapElements" label="base elements | 14">
+            <node name="map"/>
+            <node name="navref"/>
+            <node name="topicref"/>
+            <node name="anchor"/>
+            <node name="reltable"/>
+            <node name="relheader"/>
+            <node name="relcolspec"/>
+            <node name="relrow"/>
+            <node name="relcell"/>
+            <node name="topicmeta"/>
+            <node name="shortdesc"/>
+            <node name="linktext"/>
+            <node name="searchtitle"/>
+            <node name="ux-window"/>
+         </node>
+         <node name="otherElements" label="specialized elements | 73"/>
+      </node>
+   </nodes>
+</graph>

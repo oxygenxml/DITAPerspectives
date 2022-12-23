@@ -1,0 +1,53 @@
+// DITA Domain hazard-d
+strict digraph {
+				
+  // Root node
+  
+	"hazard-d" [label ="hazard-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"note" [label ="note" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"hazardstatement" [label ="hazardstatement" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"image" [label ="image" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"hazardsymbol" [label ="hazardsymbol" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"div" [label ="div" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"messagepanel" [label ="messagepanel" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"typeofhazard" [label ="typeofhazard" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"consequence" [label ="consequence" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"howtoavoid" [label ="howtoavoid" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"hazard-d" -> "note" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"note" -> "hazardstatement" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"hazard-d" -> "image" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"image" -> "hazardsymbol" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"hazard-d" -> "div" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"div" -> "messagepanel" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"div" -> "typeofhazard" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"div" -> "consequence" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"div" -> "howtoavoid" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

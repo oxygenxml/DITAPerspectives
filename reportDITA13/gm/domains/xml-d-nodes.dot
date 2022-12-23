@@ -1,0 +1,45 @@
+// DITA Domain xml-d
+strict digraph {
+				
+  // Root node
+  
+	"xml-d" [label ="xml-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"markupname" [label ="markupname" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"numcharref" [label ="numcharref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"parameterentity" [label ="parameterentity" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"textentity" [label ="textentity" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"xmlatt" [label ="xmlatt" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"xmlelement" [label ="xmlelement" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"xmlnsname" [label ="xmlnsname" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"xmlpi" [label ="xmlpi" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"xml-d" -> "markupname" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"markupname" -> "numcharref" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"markupname" -> "parameterentity" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"markupname" -> "textentity" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"markupname" -> "xmlatt" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"markupname" -> "xmlelement" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"markupname" -> "xmlnsname" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"markupname" -> "xmlpi" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

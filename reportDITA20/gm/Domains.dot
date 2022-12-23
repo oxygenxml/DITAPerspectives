@@ -1,0 +1,100 @@
+// DITA Domains
+strict digraph {
+			
+  // Other nodes
+      
+	"domains" [label ="Domanins | 22" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"abbrev-d" [label ="abbrev-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"markup-d" [label ="markup-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"mathml-d" [label ="mathml-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"syntaxdiagram-d" [label ="syntaxdiagram-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"hw-d" [label ="hw-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"svg-d" [label ="svg-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"ui-d" [label ="ui-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"equation-d" [label ="equation-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"pr-d" [label ="pr-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"xml-d" [label ="xml-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"glossref-d" [label ="glossref-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"sw-d" [label ="sw-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"relmgmt-d" [label ="relmgmt-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"xnal-d" [label ="xnal-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"ditavalref-d" [label ="ditavalref-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"hazard-d" [label ="hazard-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"emphasis-d" [label ="emphasis-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"hi-d" [label ="hi-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"mapgroup-d" [label ="mapgroup-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"alternativeTitles-d" [label ="alternativeTitles-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"ut-d" [label ="ut-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"classify-d" [label ="classify-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+         
+	"domains" -> "abbrev-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "markup-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "mathml-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "syntaxdiagram-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "hw-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "svg-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "ui-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "equation-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "pr-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "xml-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "glossref-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "sw-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "relmgmt-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "xnal-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "ditavalref-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "hazard-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "emphasis-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "hi-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "mapgroup-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "alternativeTitles-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "ut-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"domains" -> "classify-d" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

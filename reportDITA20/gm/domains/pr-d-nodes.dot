@@ -1,0 +1,99 @@
+// DITA Domain pr-d
+strict digraph {
+				
+  // Root node
+  
+	"pr-d" [label ="pr-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"ph" [label ="ph" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"codeph" [label ="codeph" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"pre" [label ="pre" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"codeblock" [label ="codeblock" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"include" [label ="include" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"coderef" [label ="coderef" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"keyword" [label ="keyword" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"option" [label ="option" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"parmname" [label ="parmname" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"apiname" [label ="apiname" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"dl" [label ="dl" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"parml" [label ="parml" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"dlentry" [label ="dlentry" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"plentry" [label ="plentry" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"dt" [label ="dt" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"pt" [label ="pt" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"dd" [label ="dd" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"pd" [label ="pd" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"pr-d" -> "ph" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "codeph" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"pr-d" -> "pre" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"pre" -> "codeblock" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"pr-d" -> "include" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"include" -> "coderef" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"pr-d" -> "keyword" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"keyword" -> "option" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"keyword" -> "parmname" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"keyword" -> "apiname" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"pr-d" -> "dl" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"dl" -> "parml" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"pr-d" -> "dlentry" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"dlentry" -> "plentry" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"pr-d" -> "dt" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"dt" -> "pt" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"pr-d" -> "dd" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"dd" -> "pd" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

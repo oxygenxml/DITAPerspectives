@@ -1,0 +1,111 @@
+// DITA Domain syntaxdiagram-d
+strict digraph {
+				
+  // Root node
+  
+	"syntaxdiagram-d" [label ="syntaxdiagram-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"ph" [label ="ph" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"var" [label ="var" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"synph" [label ="synph" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"oper" [label ="oper" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"delim" [label ="delim" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"sep" [label ="sep" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"repsep" [label ="repsep" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"fig" [label ="fig" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"syntaxdiagram" [label ="syntaxdiagram" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"figgroup" [label ="figgroup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"synblk" [label ="synblk" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"groupseq" [label ="groupseq" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"groupchoice" [label ="groupchoice" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"groupcomp" [label ="groupcomp" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"fragment" [label ="fragment" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"xref" [label ="xref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"fragref" [label ="fragref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"synnoteref" [label ="synnoteref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"fn" [label ="fn" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"synnote" [label ="synnote" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"keyword" [label ="keyword" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"kwd" [label ="kwd" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"syntaxdiagram-d" -> "ph" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "var" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "synph" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "oper" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "delim" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "sep" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "repsep" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"syntaxdiagram-d" -> "fig" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fig" -> "syntaxdiagram" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"syntaxdiagram-d" -> "figgroup" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"figgroup" -> "synblk" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"figgroup" -> "groupseq" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"figgroup" -> "groupchoice" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"figgroup" -> "groupcomp" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"figgroup" -> "fragment" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"syntaxdiagram-d" -> "xref" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"xref" -> "fragref" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"xref" -> "synnoteref" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"syntaxdiagram-d" -> "fn" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"fn" -> "synnote" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"syntaxdiagram-d" -> "keyword" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"keyword" -> "kwd" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

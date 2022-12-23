@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain delay-d">
+   <nodes root="delay-d">
+      <node name="keywords">
+         <node name="exportanchors"/>
+      </node>
+      <node name="keyword">
+         <node name="anchorid"/>
+         <node name="anchorkey"/>
+      </node>
+   </nodes>
+</graph>

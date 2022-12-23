@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA 2.x Map//EN" "map.dtd">
+<map>
+   <title>DITA Specializations</title>
+   <topicref href="../topics/bookmap.dita"/>
+   <topicref href="../topics/troubleshooting.dita"/>
+   <topicref href="../topics/reference.dita"/>
+   <topicref href="../topics/task.dita"/>
+   <topicref href="../topics/glossentry.dita"/>
+   <topicref href="../topics/glossgroup.dita"/>
+   <topicref href="../topics/concept.dita"/>
+</map>

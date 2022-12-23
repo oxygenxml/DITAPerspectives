@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA 2.x Map//EN" "map.dtd">
+<map>
+   <title>DITA Domains</title>
+   <topicref href="../topics/abbrev-d.dita"/>
+   <topicref href="../topics/markup-d.dita"/>
+   <topicref href="../topics/mathml-d.dita"/>
+   <topicref href="../topics/syntaxdiagram-d.dita"/>
+   <topicref href="../topics/hw-d.dita"/>
+   <topicref href="../topics/svg-d.dita"/>
+   <topicref href="../topics/ui-d.dita"/>
+   <topicref href="../topics/equation-d.dita"/>
+   <topicref href="../topics/pr-d.dita"/>
+   <topicref href="../topics/xml-d.dita"/>
+   <topicref href="../topics/glossref-d.dita"/>
+   <topicref href="../topics/sw-d.dita"/>
+   <topicref href="../topics/relmgmt-d.dita"/>
+   <topicref href="../topics/xnal-d.dita"/>
+   <topicref href="../topics/ditavalref-d.dita"/>
+   <topicref href="../topics/hazard-d.dita"/>
+   <topicref href="../topics/emphasis-d.dita"/>
+   <topicref href="../topics/hi-d.dita"/>
+   <topicref href="../topics/mapgroup-d.dita"/>
+   <topicref href="../topics/alternativeTitles-d.dita"/>
+   <topicref href="../topics/ut-d.dita"/>
+   <topicref href="../topics/classify-d.dita"/>
+</map>

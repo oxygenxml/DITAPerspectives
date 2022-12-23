@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Specializations">
+   <nodes>
+      <node name="specializations" label="Specializations | 7">
+         <node name="bookmap"/>
+         <node name="troubleshooting"/>
+         <node name="reference"/>
+         <node name="task"/>
+         <node name="glossentry"/>
+         <node name="glossgroup"/>
+         <node name="concept"/>
+      </node>
+   </nodes>
+</graph>

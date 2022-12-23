@@ -1,0 +1,125 @@
+<!DOCTYPE HTML><html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>DITA Domain learning-d</title><script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script><style type="text/css">
+                    #mynetwork {
+                        width: 90%;
+                        height: 700px;
+                        border: 1px solid lightgray;
+                    }</style>
+   </head>
+   <body>
+      <div id="mynetwork"></div><script type="text/javascript">
+var nodes = new vis.DataSet([
+{ id: 0, label: "learning-d" },
+{ id: 1, label: "note" },
+{ id: 2, label: "lcInstructornote" },
+{ id: 3, label: "lcInteractionBase" },
+{ id: 4, label: "lcTrueFalse" },
+{ id: 5, label: "lcSingleSelect" },
+{ id: 6, label: "lcMultipleSelect" },
+{ id: 7, label: "lcSequencing" },
+{ id: 8, label: "lcMatching" },
+{ id: 9, label: "lcHotspot" },
+{ id: 10, label: "lcOpenQuestion" },
+{ id: 11, label: "lcQuestionBase" },
+{ id: 12, label: "lcQuestion" },
+{ id: 13, label: "p" },
+{ id: 14, label: "lcOpenAnswer" },
+{ id: 15, label: "lcAsset" },
+{ id: 16, label: "lcFeedback" },
+{ id: 17, label: "lcFeedbackCorrect" },
+{ id: 18, label: "lcFeedbackIncorrect" },
+{ id: 19, label: "lcAnswerContent" },
+{ id: 20, label: "ul" },
+{ id: 21, label: "lcAnswerOptionGroup" },
+{ id: 22, label: "ol" },
+{ id: 23, label: "lcSequenceOptionGroup" },
+{ id: 24, label: "li" },
+{ id: 25, label: "lcSequenceOption" },
+{ id: 26, label: "lcAnswerOption" },
+{ id: 27, label: "simpletable" },
+{ id: 28, label: "lcMatchTable" },
+{ id: 29, label: "sthead" },
+{ id: 30, label: "lcMatchingHeader" },
+{ id: 31, label: "strow" },
+{ id: 32, label: "lcMatchingPair" },
+{ id: 33, label: "stentry" },
+{ id: 34, label: "lcItem" },
+{ id: 35, label: "lcMatchingItem" },
+{ id: 36, label: "lcMatchingItemFeedback" },
+{ id: 37, label: "figgroup" },
+{ id: 38, label: "lcHotspotMap" },
+{ id: 39, label: "lcArea" },
+{ id: 40, label: "keyword" },
+{ id: 41, label: "lcAreaShape" },
+{ id: 42, label: "ph" },
+{ id: 43, label: "lcAreaCoords" },
+{ id: 44, label: "data" },
+{ id: 45, label: "lcCorrectResponse" },
+{ id: 46, label: "lcSequence" },
+]);
+
+var edges = new vis.DataSet([
+{ from: 0, to: 1, arrows: "to" },
+{ from: 1, to: 2, arrows: "to" },
+{ from: 0, to: 3, arrows: "to" },
+{ from: 3, to: 4, arrows: "to" },
+{ from: 3, to: 5, arrows: "to" },
+{ from: 3, to: 6, arrows: "to" },
+{ from: 3, to: 7, arrows: "to" },
+{ from: 3, to: 8, arrows: "to" },
+{ from: 3, to: 9, arrows: "to" },
+{ from: 3, to: 10, arrows: "to" },
+{ from: 0, to: 11, arrows: "to" },
+{ from: 11, to: 12, arrows: "to" },
+{ from: 0, to: 13, arrows: "to" },
+{ from: 13, to: 14, arrows: "to" },
+{ from: 13, to: 15, arrows: "to" },
+{ from: 13, to: 16, arrows: "to" },
+{ from: 13, to: 17, arrows: "to" },
+{ from: 13, to: 18, arrows: "to" },
+{ from: 13, to: 19, arrows: "to" },
+{ from: 0, to: 20, arrows: "to" },
+{ from: 20, to: 21, arrows: "to" },
+{ from: 0, to: 22, arrows: "to" },
+{ from: 22, to: 23, arrows: "to" },
+{ from: 0, to: 24, arrows: "to" },
+{ from: 24, to: 25, arrows: "to" },
+{ from: 24, to: 26, arrows: "to" },
+{ from: 0, to: 27, arrows: "to" },
+{ from: 27, to: 28, arrows: "to" },
+{ from: 0, to: 29, arrows: "to" },
+{ from: 29, to: 30, arrows: "to" },
+{ from: 0, to: 31, arrows: "to" },
+{ from: 31, to: 32, arrows: "to" },
+{ from: 0, to: 33, arrows: "to" },
+{ from: 33, to: 34, arrows: "to" },
+{ from: 33, to: 35, arrows: "to" },
+{ from: 33, to: 36, arrows: "to" },
+{ from: 0, to: 37, arrows: "to" },
+{ from: 37, to: 38, arrows: "to" },
+{ from: 37, to: 39, arrows: "to" },
+{ from: 0, to: 40, arrows: "to" },
+{ from: 40, to: 41, arrows: "to" },
+{ from: 0, to: 42, arrows: "to" },
+{ from: 42, to: 43, arrows: "to" },
+{ from: 0, to: 44, arrows: "to" },
+{ from: 44, to: 45, arrows: "to" },
+{ from: 44, to: 46, arrows: "to" },
+]);
+// create a network
+var container = document.getElementById("mynetwork");
+var data = {
+nodes: nodes,
+edges: edges,
+};
+var options = {
+  nodes:{
+      shape: 'box',
+      widthConstraint: 200,
+  }
+};
+var network = new vis.Network(container, data, options);
+				</script></body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain mathml-d">
+   <nodes root="mathml-d">
+      <node name="include">
+         <node name="mathmlref"/>
+      </node>
+      <node name="foreign">
+         <node name="mathml"/>
+      </node>
+   </nodes>
+</graph>

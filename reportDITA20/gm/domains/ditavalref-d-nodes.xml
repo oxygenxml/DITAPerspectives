@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain ditavalref-d">
+   <nodes root="ditavalref-d">
+      <node name="topicref">
+         <node name="ditavalref"/>
+      </node>
+      <node name="topicmeta">
+         <node name="ditavalmeta"/>
+      </node>
+      <node name="data">
+         <node name="dvrResourcePrefix"/>
+         <node name="dvrResourceSuffix"/>
+         <node name="dvrKeyscopePrefix"/>
+         <node name="dvrKeyscopeSuffix"/>
+      </node>
+   </nodes>
+</graph>

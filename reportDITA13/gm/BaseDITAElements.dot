@@ -1,0 +1,546 @@
+// DITA Stats
+strict digraph {
+			
+  // Other nodes
+      
+	"elements" [label ="DITA elements | 616" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"baseElements" [label ="base elements | 119" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+            
+	"map" [label ="map" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"navref" [label ="navref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"topicref" [label ="topicref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"anchor" [label ="anchor" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"reltable" [label ="reltable" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"relheader" [label ="relheader" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"relcolspec" [label ="relcolspec" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"relrow" [label ="relrow" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"relcell" [label ="relcell" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"topicmeta" [label ="topicmeta" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"shortdesc" [label ="shortdesc" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"linktext" [label ="linktext" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"searchtitle" [label ="searchtitle" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"ux-window" [label ="ux-window" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"author" [label ="author" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"source" [label ="source" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"publisher" [label ="publisher" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"copyright" [label ="copyright" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"copyryear" [label ="copyryear" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"copyrholder" [label ="copyrholder" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"critdates" [label ="critdates" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"created" [label ="created" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"revised" [label ="revised" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"permissions" [label ="permissions" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"category" [label ="category" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"metadata" [label ="metadata" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"audience" [label ="audience" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"keywords" [label ="keywords" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"prodinfo" [label ="prodinfo" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"prodname" [label ="prodname" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"vrmlist" [label ="vrmlist" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"vrm" [label ="vrm" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"brand" [label ="brand" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"series" [label ="series" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"platform" [label ="platform" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"prognum" [label ="prognum" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"featnum" [label ="featnum" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"component" [label ="component" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"othermeta" [label ="othermeta" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"resourceid" [label ="resourceid" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"table" [label ="table" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"tgroup" [label ="tgroup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"colspec" [label ="colspec" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"thead" [label ="thead" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"tbody" [label ="tbody" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"row" [label ="row" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"entry" [label ="entry" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"data-about" [label ="data-about" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"data" [label ="data" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"unknown" [label ="unknown" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"foreign" [label ="foreign" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"title" [label ="title" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"navtitle" [label ="navtitle" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"desc" [label ="desc" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"p" [label ="p" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"note" [label ="note" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"longquoteref" [label ="longquoteref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"lq" [label ="lq" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"q" [label ="q" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"sl" [label ="sl" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"sli" [label ="sli" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"ul" [label ="ul" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"ol" [label ="ol" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"li" [label ="li" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"itemgroup" [label ="itemgroup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"dl" [label ="dl" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"dlhead" [label ="dlhead" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"dthd" [label ="dthd" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"ddhd" [label ="ddhd" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"dlentry" [label ="dlentry" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"dt" [label ="dt" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"dd" [label ="dd" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"fig" [label ="fig" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"figgroup" [label ="figgroup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"pre" [label ="pre" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"lines" [label ="lines" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"div" [label ="div" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"text" [label ="text" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"keyword" [label ="keyword" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"term" [label ="term" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"ph" [label ="ph" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"tm" [label ="tm" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"boolean" [label ="boolean" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"state" [label ="state" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"image" [label ="image" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"alt" [label ="alt" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"longdescref" [label ="longdescref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"object" [label ="object" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"param" [label ="param" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"simpletable" [label ="simpletable" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"sthead" [label ="sthead" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"strow" [label ="strow" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"stentry" [label ="stentry" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"draft-comment" [label ="draft-comment" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"required-cleanup" [label ="required-cleanup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"fn" [label ="fn" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"indexterm" [label ="indexterm" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"index-base" [label ="index-base" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"indextermref" [label ="indextermref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"cite" [label ="cite" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"xref" [label ="xref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"topic" [label ="topic" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"titlealts" [label ="titlealts" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"searchtitle" [label ="searchtitle" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"shortdesc" [label ="shortdesc" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"abstract" [label ="abstract" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"body" [label ="body" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"bodydiv" [label ="bodydiv" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"no-topic-nesting" [label ="no-topic-nesting" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"section" [label ="section" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"sectiondiv" [label ="sectiondiv" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"example" [label ="example" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"prolog" [label ="prolog" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"related-links" [label ="related-links" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"link" [label ="link" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"linktext" [label ="linktext" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"linklist" [label ="linklist" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"linkinfo" [label ="linkinfo" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"linkpool" [label ="linkpool" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+         
+         
+	"otherElements" [label ="specialized elements | 497" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"duplicateElements" [label ="duplicate elements | 3" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+            
+	"searchtitle" [label ="searchtitle" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+               
+	"class = '- map/searchtitle'" [label ="class = '- map/searchtitle'" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDFFAA"]
+               
+	"class = '- topic/searchtitle'" [label ="class = '- topic/searchtitle'" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDFFAA"]
+            
+            
+	"shortdesc" [label ="shortdesc" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+               
+	"class = '- map/shortdesc'" [label ="class = '- map/shortdesc'" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDFFAA"]
+               
+	"class = '- topic/shortdesc'" [label ="class = '- topic/shortdesc'" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDFFAA"]
+            
+            
+	"linktext" [label ="linktext" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+               
+	"class = '- map/linktext'" [label ="class = '- map/linktext'" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDFFAA"]
+               
+	"class = '- topic/linktext'" [label ="class = '- topic/linktext'" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDFFAA"]
+            
+         
+      
+   
+  // Edges
+      
+         
+	"elements" -> "baseElements" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "map" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "navref" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "topicref" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "anchor" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "reltable" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "relheader" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "relcolspec" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "relrow" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "relcell" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "topicmeta" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "shortdesc" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "linktext" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "searchtitle" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "ux-window" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "author" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "source" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "publisher" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "copyright" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "copyryear" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "copyrholder" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "critdates" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "created" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "revised" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "permissions" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "category" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "metadata" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "audience" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "keywords" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "prodinfo" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "prodname" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "vrmlist" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "vrm" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "brand" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "series" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "platform" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "prognum" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "featnum" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "component" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "othermeta" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "resourceid" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "table" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "tgroup" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "colspec" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "thead" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "tbody" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "row" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "entry" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "data-about" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "data" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "unknown" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "foreign" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "title" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "navtitle" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "desc" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "p" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "note" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "longquoteref" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "lq" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "q" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "sl" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "sli" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "ul" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "ol" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "li" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "itemgroup" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "dl" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "dlhead" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "dthd" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "ddhd" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "dlentry" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "dt" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "dd" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "fig" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "figgroup" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "pre" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "lines" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "div" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "text" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "keyword" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "term" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "ph" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "tm" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "boolean" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "state" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "image" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "alt" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "longdescref" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "object" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "param" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "simpletable" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "sthead" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "strow" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "stentry" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "draft-comment" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "required-cleanup" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "fn" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "indexterm" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "index-base" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "indextermref" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "cite" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "xref" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "topic" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "titlealts" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "searchtitle" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "shortdesc" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "abstract" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "body" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "bodydiv" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "no-topic-nesting" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "section" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "sectiondiv" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "example" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "prolog" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "related-links" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "link" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "linktext" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "linklist" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "linkinfo" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseElements" -> "linkpool" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+         
+	"elements" -> "otherElements" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"elements" -> "duplicateElements" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"duplicateElements" -> "searchtitle" [fillcolor="#a6cee3" color="#1f78b4"]
+               
+	"searchtitle" -> "class = '- map/searchtitle'" [fillcolor="#a6cee3" color="#1f78b4"]
+               
+	"searchtitle" -> "class = '- topic/searchtitle'" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+            
+	"duplicateElements" -> "shortdesc" [fillcolor="#a6cee3" color="#1f78b4"]
+               
+	"shortdesc" -> "class = '- map/shortdesc'" [fillcolor="#a6cee3" color="#1f78b4"]
+               
+	"shortdesc" -> "class = '- topic/shortdesc'" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+            
+	"duplicateElements" -> "linktext" [fillcolor="#a6cee3" color="#1f78b4"]
+               
+	"linktext" -> "class = '- map/linktext'" [fillcolor="#a6cee3" color="#1f78b4"]
+               
+	"linktext" -> "class = '- topic/linktext'" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+         
+      
+   }

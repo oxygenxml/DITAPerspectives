@@ -1,0 +1,25 @@
+// DITA Domain hw-d
+strict digraph {
+				
+  // Root node
+  
+	"hw-d" [label ="hw-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"ph" [label ="ph" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"hwcontrol" [label ="hwcontrol" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"partno" [label ="partno" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"hw-d" -> "ph" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "hwcontrol" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "partno" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

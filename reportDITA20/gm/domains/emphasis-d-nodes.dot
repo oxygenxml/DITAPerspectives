@@ -1,0 +1,25 @@
+// DITA Domain emphasis-d
+strict digraph {
+				
+  // Root node
+  
+	"emphasis-d" [label ="emphasis-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"ph" [label ="ph" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"strong" [label ="strong" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"em" [label ="em" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"emphasis-d" -> "ph" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "strong" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "em" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

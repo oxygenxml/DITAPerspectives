@@ -1,0 +1,47 @@
+<!DOCTYPE HTML><html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>DITA Specializations</title><script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script><style type="text/css">
+                    #mynetwork {
+                        width: 90%;
+                        height: 700px;
+                        border: 1px solid lightgray;
+                    }</style>
+   </head>
+   <body>
+      <div id="mynetwork"></div><script type="text/javascript">
+var nodes = new vis.DataSet([
+{ id: 1, label: "Specializations | 7" },
+{ id: 2, label: "bookmap" },
+{ id: 3, label: "troubleshooting" },
+{ id: 4, label: "reference" },
+{ id: 5, label: "task" },
+{ id: 6, label: "glossentry" },
+{ id: 7, label: "glossgroup" },
+{ id: 8, label: "concept" },
+]);
+
+var edges = new vis.DataSet([
+{ from: 1, to: 2, arrows: "to" },
+{ from: 1, to: 3, arrows: "to" },
+{ from: 1, to: 4, arrows: "to" },
+{ from: 1, to: 5, arrows: "to" },
+{ from: 1, to: 6, arrows: "to" },
+{ from: 1, to: 7, arrows: "to" },
+{ from: 1, to: 8, arrows: "to" },
+]);
+// create a network
+var container = document.getElementById("mynetwork");
+var data = {
+nodes: nodes,
+edges: edges,
+};
+var options = {
+  nodes:{
+      shape: 'box',
+      widthConstraint: 200,
+  }
+};
+var network = new vis.Network(container, data, options);
+				</script></body>
+</html>

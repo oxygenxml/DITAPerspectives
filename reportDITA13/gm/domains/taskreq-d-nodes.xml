@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain taskreq-d">
+   <nodes root="taskreq-d">
+      <node name="prereq">
+         <node name="prelreqs"/>
+      </node>
+      <node name="postreq">
+         <node name="closereqs"/>
+      </node>
+      <node name="ul">
+         <node name="reqconds"/>
+         <node name="reqpers"/>
+         <node name="supeqli"/>
+         <node name="supplyli"/>
+         <node name="sparesli"/>
+      </node>
+      <node name="li">
+         <node name="noconds"/>
+         <node name="reqcond"/>
+         <node name="reqcontp"/>
+         <node name="personnel"/>
+         <node name="perscat"/>
+         <node name="perskill"/>
+         <node name="esttime"/>
+         <node name="supequi"/>
+         <node name="supply"/>
+         <node name="spare"/>
+         <node name="nosafety"/>
+         <node name="safecond"/>
+      </node>
+      <node name="p">
+         <node name="supequip"/>
+         <node name="supplies"/>
+         <node name="spares"/>
+      </node>
+      <node name="data">
+         <node name="nosupeq"/>
+         <node name="nosupply"/>
+         <node name="nospares"/>
+      </node>
+      <node name="ol">
+         <node name="safety"/>
+      </node>
+   </nodes>
+</graph>

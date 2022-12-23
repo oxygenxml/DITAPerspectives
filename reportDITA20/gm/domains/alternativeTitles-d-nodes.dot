@@ -1,0 +1,37 @@
+// DITA Domain alternativeTitles-d
+strict digraph {
+				
+  // Root node
+  
+	"alternativeTitles-d" [label ="alternativeTitles-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"titlealt" [label ="titlealt" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"navtitle" [label ="navtitle" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"searchtitle" [label ="searchtitle" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"linktitle" [label ="linktitle" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"subtitle" [label ="subtitle" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"titlehint" [label ="titlehint" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"alternativeTitles-d" -> "titlealt" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"titlealt" -> "navtitle" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"titlealt" -> "searchtitle" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"titlealt" -> "linktitle" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"titlealt" -> "subtitle" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"titlealt" -> "titlehint" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

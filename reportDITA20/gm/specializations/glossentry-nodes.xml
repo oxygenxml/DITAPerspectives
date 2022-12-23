@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Specialization glossentry">
+   <nodes root="glossentryModule">
+      <node name="concept">
+         <node name="glossentry"/>
+      </node>
+      <node name="title">
+         <node name="glossterm"/>
+         <node name="glossAbbreviation"/>
+         <node name="glossAcronym"/>
+         <node name="glossShortForm"/>
+         <node name="glossSynonym"/>
+      </node>
+      <node name="abstract">
+         <node name="glossdef"/>
+      </node>
+      <node name="conbody">
+         <node name="glossBody"/>
+      </node>
+      <node name="data">
+         <node name="glossPartOfSpeech"/>
+         <node name="glossStatus"/>
+         <node name="glossProperty"/>
+      </node>
+      <node name="p">
+         <node name="glossSurfaceForm"/>
+      </node>
+      <node name="note">
+         <node name="glossUsage"/>
+         <node name="glossScopeNote"/>
+      </node>
+      <node name="image">
+         <node name="glossSymbol"/>
+      </node>
+      <node name="section">
+         <node name="glossAlt"/>
+      </node>
+      <node name="xref">
+         <node name="glossAlternateFor"/>
+      </node>
+   </nodes>
+</graph>

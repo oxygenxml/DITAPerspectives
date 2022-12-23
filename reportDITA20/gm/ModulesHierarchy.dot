@@ -1,0 +1,147 @@
+// DITA Modules hierarchy
+strict digraph {
+			
+  // Other nodes
+      
+	"map" [label ="map" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"bookmap" [label ="bookmap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"glossref-d" [label ="glossref-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"ditavalref-d" [label ="ditavalref-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"mapgroup-d" [label ="mapgroup-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"classify-d" [label ="classify-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"topic" [label ="topic" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"bookmap" [label ="bookmap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"abbrev-d" [label ="abbrev-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"markup-d" [label ="markup-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+            
+	"xml-d" [label ="xml-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+         
+         
+	"mathml-d" [label ="mathml-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"troubleshooting" [label ="troubleshooting" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"pr-d" [label ="pr-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+            
+	"syntaxdiagram-d" [label ="syntaxdiagram-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+         
+         
+	"hw-d" [label ="hw-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"svg-d" [label ="svg-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"ui-d" [label ="ui-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"reference" [label ="reference" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"equation-d" [label ="equation-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"task" [label ="task" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"concept" [label ="concept" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+            
+	"glossentry" [label ="glossentry" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"glossgroup" [label ="glossgroup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+         
+         
+	"sw-d" [label ="sw-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"relmgmt-d" [label ="relmgmt-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"xnal-d" [label ="xnal-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"ditavalref-d" [label ="ditavalref-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"hazard-d" [label ="hazard-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"emphasis-d" [label ="emphasis-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"hi-d" [label ="hi-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"alternativeTitles-d" [label ="alternativeTitles-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"ut-d" [label ="ut-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+         
+	"map" -> "bookmap" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"map" -> "glossref-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"map" -> "ditavalref-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"map" -> "mapgroup-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"map" -> "classify-d" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+         
+	"topic" -> "bookmap" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "abbrev-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "markup-d" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"markup-d" -> "xml-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+         
+	"topic" -> "mathml-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "troubleshooting" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "pr-d" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"pr-d" -> "syntaxdiagram-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+         
+	"topic" -> "hw-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "svg-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "ui-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "reference" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "equation-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "task" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "concept" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"concept" -> "glossentry" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"concept" -> "glossgroup" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+         
+	"topic" -> "sw-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "relmgmt-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "xnal-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "ditavalref-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "hazard-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "emphasis-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "hi-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "alternativeTitles-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "ut-d" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

@@ -1,0 +1,111 @@
+// DITA Specialization reference
+strict digraph {
+				
+  // Root node
+  
+	"referenceModule" [label ="referenceModule" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"topic" [label ="topic" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"reference" [label ="reference" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"body" [label ="body" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"refbody" [label ="refbody" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"bodydiv" [label ="bodydiv" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"refbodydiv" [label ="refbodydiv" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"section" [label ="section" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"refsyn" [label ="refsyn" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"simpletable" [label ="simpletable" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"properties" [label ="properties" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"sthead" [label ="sthead" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"prophead" [label ="prophead" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"stentry" [label ="stentry" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"proptypehd" [label ="proptypehd" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"propvaluehd" [label ="propvaluehd" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"propdeschd" [label ="propdeschd" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"proptype" [label ="proptype" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"propvalue" [label ="propvalue" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"propdesc" [label ="propdesc" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"strow" [label ="strow" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"property" [label ="property" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"referenceModule" -> "topic" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "reference" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"referenceModule" -> "body" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"body" -> "refbody" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"referenceModule" -> "bodydiv" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"bodydiv" -> "refbodydiv" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"referenceModule" -> "section" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"section" -> "refsyn" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"referenceModule" -> "simpletable" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"simpletable" -> "properties" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"referenceModule" -> "sthead" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"sthead" -> "prophead" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"referenceModule" -> "stentry" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"stentry" -> "proptypehd" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"stentry" -> "propvaluehd" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"stentry" -> "propdeschd" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"stentry" -> "proptype" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"stentry" -> "propvalue" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"stentry" -> "propdesc" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"referenceModule" -> "strow" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"strow" -> "property" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

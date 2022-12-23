@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_d2">
+   <title>bookmap</title>
+   <body>
+      <p>Defined in ../data/DITA1.3/rng/bookmap/rng/bookmapMod.rng</p>
+      <p>
+         <image href="../specializations/bookmap-nodes.svg"
+                scale="40"
+                id="image_d2"/>
+      </p>
+   </body>
+</topic>

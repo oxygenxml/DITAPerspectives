@@ -1,0 +1,78 @@
+// DITA Map Stats
+strict digraph {
+			
+  // Other nodes
+      
+	"elements" [label ="DITA map elements | 87" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"baseMapElements" [label ="base elements | 14" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+            
+	"map" [label ="map" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"navref" [label ="navref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"topicref" [label ="topicref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"anchor" [label ="anchor" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"reltable" [label ="reltable" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"relheader" [label ="relheader" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"relcolspec" [label ="relcolspec" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"relrow" [label ="relrow" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"relcell" [label ="relcell" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"topicmeta" [label ="topicmeta" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"shortdesc" [label ="shortdesc" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"linktext" [label ="linktext" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"searchtitle" [label ="searchtitle" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"ux-window" [label ="ux-window" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+         
+         
+	"otherElements" [label ="specialized elements | 73" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+         
+	"elements" -> "baseMapElements" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "map" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "navref" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "topicref" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "anchor" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "reltable" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "relheader" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "relcolspec" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "relrow" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "relcell" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "topicmeta" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "shortdesc" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "linktext" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "searchtitle" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"baseMapElements" -> "ux-window" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+         
+	"elements" -> "otherElements" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

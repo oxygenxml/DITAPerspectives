@@ -1,0 +1,53 @@
+// DITA Domain ditavalref-d
+strict digraph {
+				
+  // Root node
+  
+	"ditavalref-d" [label ="ditavalref-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"topicref" [label ="topicref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"ditavalref" [label ="ditavalref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"topicmeta" [label ="topicmeta" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"ditavalmeta" [label ="ditavalmeta" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"data" [label ="data" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"dvrResourcePrefix" [label ="dvrResourcePrefix" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"dvrResourceSuffix" [label ="dvrResourceSuffix" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"dvrKeyscopePrefix" [label ="dvrKeyscopePrefix" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"dvrKeyscopeSuffix" [label ="dvrKeyscopeSuffix" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"ditavalref-d" -> "topicref" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topicref" -> "ditavalref" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"ditavalref-d" -> "topicmeta" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topicmeta" -> "ditavalmeta" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"ditavalref-d" -> "data" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "dvrResourcePrefix" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "dvrResourceSuffix" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "dvrKeyscopePrefix" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "dvrKeyscopeSuffix" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

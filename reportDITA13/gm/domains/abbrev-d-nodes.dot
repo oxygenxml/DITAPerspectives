@@ -1,0 +1,21 @@
+// DITA Domain abbrev-d
+strict digraph {
+				
+  // Root node
+  
+	"abbrev-d" [label ="abbrev-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"term" [label ="term" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"abbreviated-form" [label ="abbreviated-form" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"abbrev-d" -> "term" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"term" -> "abbreviated-form" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

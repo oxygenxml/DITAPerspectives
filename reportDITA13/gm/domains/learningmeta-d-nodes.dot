@@ -1,0 +1,87 @@
+// DITA Domain learningmeta-d
+strict digraph {
+				
+  // Root node
+  
+	"learningmeta-d" [label ="learningmeta-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"metadata" [label ="metadata" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lcLom" [label ="lcLom" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"data" [label ="data" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"lomStructure" [label ="lomStructure" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomCoverage" [label ="lomCoverage" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomAggregationLevel" [label ="lomAggregationLevel" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomTechRequirement" [label ="lomTechRequirement" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomInstallationRemarks" [label ="lomInstallationRemarks" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomOtherPlatformRequirements" [label ="lomOtherPlatformRequirements" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomInteractivityType" [label ="lomInteractivityType" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomLearningResourceType" [label ="lomLearningResourceType" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomInteractivityLevel" [label ="lomInteractivityLevel" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomSemanticDensity" [label ="lomSemanticDensity" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomIntendedUserRole" [label ="lomIntendedUserRole" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomContext" [label ="lomContext" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomTypicalAgeRange" [label ="lomTypicalAgeRange" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomDifficulty" [label ="lomDifficulty" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"lomTypicalLearningTime" [label ="lomTypicalLearningTime" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"learningmeta-d" -> "metadata" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"metadata" -> "lcLom" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"learningmeta-d" -> "data" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomStructure" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomCoverage" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomAggregationLevel" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomTechRequirement" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomInstallationRemarks" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomOtherPlatformRequirements" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomInteractivityType" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomLearningResourceType" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomInteractivityLevel" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomSemanticDensity" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomIntendedUserRole" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomContext" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomTypicalAgeRange" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomDifficulty" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "lomTypicalLearningTime" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

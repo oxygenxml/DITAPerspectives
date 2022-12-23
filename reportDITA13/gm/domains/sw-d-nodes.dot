@@ -1,0 +1,61 @@
+// DITA Domain sw-d
+strict digraph {
+				
+  // Root node
+  
+	"sw-d" [label ="sw-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"ph" [label ="ph" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"msgph" [label ="msgph" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"filepath" [label ="filepath" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"userinput" [label ="userinput" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"systemoutput" [label ="systemoutput" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"pre" [label ="pre" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"msgblock" [label ="msgblock" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"keyword" [label ="keyword" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"msgnum" [label ="msgnum" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"cmdname" [label ="cmdname" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"varname" [label ="varname" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"sw-d" -> "ph" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "msgph" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "filepath" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "userinput" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"ph" -> "systemoutput" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"sw-d" -> "pre" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"pre" -> "msgblock" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"sw-d" -> "keyword" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"keyword" -> "msgnum" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"keyword" -> "cmdname" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"keyword" -> "varname" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

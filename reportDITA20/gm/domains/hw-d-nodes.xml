@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain hw-d">
+   <nodes root="hw-d">
+      <node name="ph">
+         <node name="hwcontrol"/>
+         <node name="partno"/>
+      </node>
+   </nodes>
+</graph>

@@ -1,0 +1,37 @@
+// DITA Domain mapgroup-d
+strict digraph {
+				
+  // Root node
+  
+	"mapgroup-d" [label ="mapgroup-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"topicref" [label ="topicref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"topichead" [label ="topichead" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"topicgroup" [label ="topicgroup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"mapref" [label ="mapref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"keydef" [label ="keydef" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"mapresources" [label ="mapresources" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"mapgroup-d" -> "topicref" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topicref" -> "topichead" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topicref" -> "topicgroup" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topicref" -> "mapref" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topicref" -> "keydef" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topicref" -> "mapresources" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

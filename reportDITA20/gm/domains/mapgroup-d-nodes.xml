@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain mapgroup-d">
+   <nodes root="mapgroup-d">
+      <node name="topicref">
+         <node name="topichead"/>
+         <node name="topicgroup"/>
+         <node name="mapref"/>
+         <node name="keydef"/>
+         <node name="mapresources"/>
+      </node>
+   </nodes>
+</graph>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Specializations">
+   <nodes>
+      <node name="specializations" label="Specializations | 16">
+         <node name="bookmap"/>
+         <node name="learningSummary"/>
+         <node name="learningPlan"/>
+         <node name="learningOverview"/>
+         <node name="learningContent"/>
+         <node name="learningObjectMap"/>
+         <node name="learningBase"/>
+         <node name="learningGroupMap"/>
+         <node name="learningAssessment"/>
+         <node name="troubleshooting"/>
+         <node name="reference"/>
+         <node name="task"/>
+         <node name="glossentry"/>
+         <node name="glossgroup"/>
+         <node name="concept"/>
+         <node name="subjectScheme"/>
+      </node>
+   </nodes>
+</graph>

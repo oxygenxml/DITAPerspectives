@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Specialization troubleshooting">
+   <nodes root="troubleshootingModule">
+      <node name="topic">
+         <node name="troubleshooting"/>
+      </node>
+      <node name="body">
+         <node name="troublebody"/>
+      </node>
+      <node name="section">
+         <node name="cause"/>
+         <node name="condition"/>
+         <node name="diagnostics-general"/>
+         <node name="diagnostics-steps"/>
+         <node name="remedy"/>
+      </node>
+      <node name="bodydiv">
+         <node name="diagnostics"/>
+         <node name="troubleSolution"/>
+      </node>
+      <node name="p">
+         <node name="responsibleParty"/>
+      </node>
+   </nodes>
+</graph>

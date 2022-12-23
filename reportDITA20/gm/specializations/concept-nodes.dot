@@ -1,0 +1,41 @@
+// DITA Specialization concept
+strict digraph {
+				
+  // Root node
+  
+	"conceptModule" [label ="conceptModule" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"topic" [label ="topic" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"concept" [label ="concept" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"body" [label ="body" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"conbody" [label ="conbody" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"bodydiv" [label ="bodydiv" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"conbodydiv" [label ="conbodydiv" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"conceptModule" -> "topic" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "concept" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"conceptModule" -> "body" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"body" -> "conbody" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"conceptModule" -> "bodydiv" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"bodydiv" -> "conbodydiv" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

@@ -1,0 +1,105 @@
+// Diagram connecting group folders to shell modules defined in that group
+strict digraph {
+				
+  // Root node
+  
+	"DITA" [label ="DITA" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"group_bookmap" [label ="bookmap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"bookmap" [label ="bookmap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"group_technicalContent" [label ="technicalContent" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"troubleshooting" [label ="troubleshooting" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"concept" [label ="concept" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"ditabase" [label ="ditabase|dita" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"topic" [label ="topic" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"glossgroup" [label ="glossgroup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"map" [label ="map" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"Glossary Entry" [label ="Glossary Entry|glossentry" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"reference" [label ="reference" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"task" [label ="task" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"General Task" [label ="General Task|task" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"group_classificationMap" [label ="classificationMap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"classifyMap" [label ="classifyMap|map" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"group_xnal" [label ="xnal" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+      
+	"group_base" [label ="base" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"basemap" [label ="basemap|map" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"Base topic" [label ="Base topic|topic" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"group_subjectScheme" [label ="subjectScheme" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"subjectScheme" [label ="subjectScheme" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"DITA" -> "group_bookmap" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_bookmap" -> "bookmap" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"DITA" -> "group_technicalContent" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_technicalContent" -> "troubleshooting" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_technicalContent" -> "concept" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_technicalContent" -> "ditabase" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_technicalContent" -> "topic" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_technicalContent" -> "glossgroup" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_technicalContent" -> "map" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_technicalContent" -> "Glossary Entry" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_technicalContent" -> "reference" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_technicalContent" -> "task" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_technicalContent" -> "General Task" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"DITA" -> "group_classificationMap" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_classificationMap" -> "classifyMap" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"DITA" -> "group_xnal" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+	"DITA" -> "group_base" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_base" -> "basemap" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_base" -> "Base topic" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"DITA" -> "group_subjectScheme" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"group_subjectScheme" -> "subjectScheme" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

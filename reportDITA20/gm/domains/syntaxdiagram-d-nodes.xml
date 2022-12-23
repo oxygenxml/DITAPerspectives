@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain syntaxdiagram-d">
+   <nodes root="syntaxdiagram-d">
+      <node name="ph">
+         <node name="var"/>
+         <node name="synph"/>
+         <node name="oper"/>
+         <node name="delim"/>
+         <node name="sep"/>
+         <node name="repsep"/>
+      </node>
+      <node name="fig">
+         <node name="syntaxdiagram"/>
+      </node>
+      <node name="figgroup">
+         <node name="synblk"/>
+         <node name="groupseq"/>
+         <node name="groupchoice"/>
+         <node name="groupcomp"/>
+         <node name="fragment"/>
+      </node>
+      <node name="xref">
+         <node name="fragref"/>
+         <node name="synnoteref"/>
+      </node>
+      <node name="fn">
+         <node name="synnote"/>
+      </node>
+      <node name="keyword">
+         <node name="kwd"/>
+      </node>
+   </nodes>
+</graph>

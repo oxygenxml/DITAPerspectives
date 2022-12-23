@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain xnal-d">
+   <nodes root="xnal-d">
+      <node name="author">
+         <node name="authorinformation"/>
+      </node>
+      <node name="data">
+         <node name="namedetails"/>
+         <node name="personname"/>
+         <node name="honorific"/>
+         <node name="firstname"/>
+         <node name="middlename"/>
+         <node name="lastname"/>
+         <node name="generationidentifier"/>
+         <node name="otherinfo"/>
+         <node name="personinfo"/>
+         <node name="organizationinfo"/>
+         <node name="contactnumbers"/>
+         <node name="contactnumber"/>
+         <node name="emailaddresses"/>
+         <node name="emailaddress"/>
+         <node name="urls"/>
+         <node name="url"/>
+      </node>
+      <node name="ph">
+         <node name="organizationnamedetails"/>
+         <node name="organizationname"/>
+         <node name="addressdetails"/>
+         <node name="locality"/>
+         <node name="localityname"/>
+         <node name="administrativearea"/>
+         <node name="thoroughfare"/>
+         <node name="postalcode"/>
+         <node name="country"/>
+      </node>
+   </nodes>
+</graph>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML><html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>DITA Specialization reference</title><script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script><style type="text/css">
+                    #mynetwork {
+                        width: 90%;
+                        height: 700px;
+                        border: 1px solid lightgray;
+                    }</style>
+   </head>
+   <body>
+      <div id="mynetwork"></div><script type="text/javascript">
+var nodes = new vis.DataSet([
+{ id: 0, label: "referenceModule" },
+{ id: 1, label: "topic" },
+{ id: 2, label: "reference" },
+{ id: 3, label: "body" },
+{ id: 4, label: "refbody" },
+{ id: 5, label: "bodydiv" },
+{ id: 6, label: "refbodydiv" },
+{ id: 7, label: "section" },
+{ id: 8, label: "refsyn" },
+{ id: 9, label: "simpletable" },
+{ id: 10, label: "properties" },
+{ id: 11, label: "sthead" },
+{ id: 12, label: "prophead" },
+{ id: 13, label: "stentry" },
+{ id: 14, label: "proptypehd" },
+{ id: 15, label: "propvaluehd" },
+{ id: 16, label: "propdeschd" },
+{ id: 17, label: "proptype" },
+{ id: 18, label: "propvalue" },
+{ id: 19, label: "propdesc" },
+{ id: 20, label: "strow" },
+{ id: 21, label: "property" },
+]);
+
+var edges = new vis.DataSet([
+{ from: 0, to: 1, arrows: "to" },
+{ from: 1, to: 2, arrows: "to" },
+{ from: 0, to: 3, arrows: "to" },
+{ from: 3, to: 4, arrows: "to" },
+{ from: 0, to: 5, arrows: "to" },
+{ from: 5, to: 6, arrows: "to" },
+{ from: 0, to: 7, arrows: "to" },
+{ from: 7, to: 8, arrows: "to" },
+{ from: 0, to: 9, arrows: "to" },
+{ from: 9, to: 10, arrows: "to" },
+{ from: 0, to: 11, arrows: "to" },
+{ from: 11, to: 12, arrows: "to" },
+{ from: 0, to: 13, arrows: "to" },
+{ from: 13, to: 14, arrows: "to" },
+{ from: 13, to: 15, arrows: "to" },
+{ from: 13, to: 16, arrows: "to" },
+{ from: 13, to: 17, arrows: "to" },
+{ from: 13, to: 18, arrows: "to" },
+{ from: 13, to: 19, arrows: "to" },
+{ from: 0, to: 20, arrows: "to" },
+{ from: 20, to: 21, arrows: "to" },
+]);
+// create a network
+var container = document.getElementById("mynetwork");
+var data = {
+nodes: nodes,
+edges: edges,
+};
+var options = {
+  nodes:{
+      shape: 'box',
+      widthConstraint: 200,
+  }
+};
+var network = new vis.Network(container, data, options);
+				</script></body>
+</html>

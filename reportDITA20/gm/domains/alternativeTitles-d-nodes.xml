@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain alternativeTitles-d">
+   <nodes root="alternativeTitles-d">
+      <node name="titlealt">
+         <node name="navtitle"/>
+         <node name="searchtitle"/>
+         <node name="linktitle"/>
+         <node name="subtitle"/>
+         <node name="titlehint"/>
+      </node>
+   </nodes>
+</graph>

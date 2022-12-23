@@ -1,0 +1,67 @@
+// DITA Domain classify-d
+strict digraph {
+				
+  // Root node
+  
+	"classify-d" [label ="classify-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"topicref" [label ="topicref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"topicsubject" [label ="topicsubject" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"topicapply" [label ="topicapply" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"subjectref" [label ="subjectref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"reltable" [label ="reltable" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"topicSubjectTable" [label ="topicSubjectTable" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"relrow" [label ="relrow" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"topicSubjectHeader" [label ="topicSubjectHeader" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"topicSubjectRow" [label ="topicSubjectRow" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"relcell" [label ="relcell" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"topicCell" [label ="topicCell" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"subjectCell" [label ="subjectCell" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"classify-d" -> "topicref" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topicref" -> "topicsubject" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topicref" -> "topicapply" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topicref" -> "subjectref" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"classify-d" -> "reltable" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"reltable" -> "topicSubjectTable" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"classify-d" -> "relrow" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"relrow" -> "topicSubjectHeader" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"relrow" -> "topicSubjectRow" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"classify-d" -> "relcell" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"relcell" -> "topicCell" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"relcell" -> "subjectCell" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

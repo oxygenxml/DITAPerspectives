@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain learning2-d">
+   <nodes root="learning2-d">
+      <node name="note">
+         <node name="lcInstructornote2"/>
+      </node>
+      <node name="lcInteractionBase2">
+         <node name="lcTrueFalse2"/>
+         <node name="lcSingleSelect2"/>
+         <node name="lcMultipleSelect2"/>
+         <node name="lcSequencing2"/>
+         <node name="lcMatching2"/>
+         <node name="lcHotspot2"/>
+         <node name="lcOpenQuestion2"/>
+      </node>
+      <node name="lcQuestionBase2">
+         <node name="lcQuestion2"/>
+      </node>
+      <node name="div">
+         <node name="lcOpenAnswer2"/>
+         <node name="lcAsset2"/>
+         <node name="lcFeedback2"/>
+         <node name="lcFeedbackCorrect2"/>
+         <node name="lcFeedbackIncorrect2"/>
+         <node name="lcAnswerContent2"/>
+      </node>
+      <node name="ul">
+         <node name="lcAnswerOptionGroup2"/>
+      </node>
+      <node name="ol">
+         <node name="lcSequenceOptionGroup2"/>
+      </node>
+      <node name="li">
+         <node name="lcSequenceOption2"/>
+         <node name="lcAnswerOption2"/>
+      </node>
+      <node name="simpletable">
+         <node name="lcMatchTable2"/>
+      </node>
+      <node name="sthead">
+         <node name="lcMatchingHeader2"/>
+      </node>
+      <node name="strow">
+         <node name="lcMatchingPair2"/>
+      </node>
+      <node name="stentry">
+         <node name="lcItem2"/>
+         <node name="lcMatchingItem2"/>
+         <node name="lcMatchingItemFeedback2"/>
+      </node>
+      <node name="figgroup">
+         <node name="lcHotspotMap2"/>
+         <node name="lcArea2"/>
+      </node>
+      <node name="keyword">
+         <node name="lcAreaShape2"/>
+      </node>
+      <node name="ph">
+         <node name="lcAreaCoords2"/>
+      </node>
+      <node name="data">
+         <node name="lcCorrectResponse2"/>
+         <node name="lcSequence2"/>
+      </node>
+   </nodes>
+</graph>

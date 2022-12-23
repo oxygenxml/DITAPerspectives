@@ -1,0 +1,67 @@
+// DITA Domain relmgmt-d
+strict digraph {
+				
+  // Root node
+  
+	"relmgmt-d" [label ="relmgmt-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"metadata" [label ="metadata" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"change-historylist" [label ="change-historylist" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"data" [label ="data" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"change-item" [label ="change-item" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"change-person" [label ="change-person" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"change-organization" [label ="change-organization" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"change-revisionid" [label ="change-revisionid" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"change-request-reference" [label ="change-request-reference" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"change-request-system" [label ="change-request-system" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"change-request-id" [label ="change-request-id" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"change-started" [label ="change-started" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"change-completed" [label ="change-completed" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"change-summary" [label ="change-summary" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"relmgmt-d" -> "metadata" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"metadata" -> "change-historylist" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"relmgmt-d" -> "data" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "change-item" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "change-person" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "change-organization" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "change-revisionid" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "change-request-reference" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "change-request-system" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "change-request-id" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "change-started" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "change-completed" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"data" -> "change-summary" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

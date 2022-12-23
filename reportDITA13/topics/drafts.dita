@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_i23_5lh_kvb">
+    <title>Drafts</title>
+    <body>
+        <p>
+            <note type="note" id="note_lr1_ylh_kvb">
+                <p>Use only base elements then offer specializations further, so for example
+                    ph/bold, pre->codeblock, etc. First level should be base elements then offer
+                    more.</p>
+            </note>
+            <note id="note_mr1_ylh_kvb">
+                <p>Create a visualization of the DITA elements to see how they derive from base
+                    types. Show a document projected on different levels of generalization, up to
+                    the base type, using something like a slider to move.</p>
+            </note>
+        </p>
+    </body>
+</topic>

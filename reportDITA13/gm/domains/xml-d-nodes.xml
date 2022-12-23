@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain xml-d">
+   <nodes root="xml-d">
+      <node name="markupname">
+         <node name="numcharref"/>
+         <node name="parameterentity"/>
+         <node name="textentity"/>
+         <node name="xmlatt"/>
+         <node name="xmlelement"/>
+         <node name="xmlnsname"/>
+         <node name="xmlpi"/>
+      </node>
+   </nodes>
+</graph>

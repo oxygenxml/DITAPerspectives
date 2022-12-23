@@ -1,0 +1,31 @@
+// DITA Domain svg-d
+strict digraph {
+				
+  // Root node
+  
+	"svg-d" [label ="svg-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"foreign" [label ="foreign" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"svg-container" [label ="svg-container" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"include" [label ="include" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"svgref" [label ="svgref" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"svg-d" -> "foreign" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"foreign" -> "svg-container" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+	"svg-d" -> "include" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"include" -> "svgref" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain pr-d">
+   <nodes root="pr-d">
+      <node name="ph">
+         <node name="codeph"/>
+      </node>
+      <node name="pre">
+         <node name="codeblock"/>
+      </node>
+      <node name="include">
+         <node name="coderef"/>
+      </node>
+      <node name="keyword">
+         <node name="option"/>
+         <node name="parmname"/>
+         <node name="apiname"/>
+      </node>
+      <node name="dl">
+         <node name="parml"/>
+      </node>
+      <node name="dlentry">
+         <node name="plentry"/>
+      </node>
+      <node name="dt">
+         <node name="pt"/>
+      </node>
+      <node name="dd">
+         <node name="pd"/>
+      </node>
+   </nodes>
+</graph>

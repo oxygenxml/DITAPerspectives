@@ -1,0 +1,21 @@
+// DITA Specialization learningObjectMap
+strict digraph {
+				
+  // Root node
+  
+	"learningObjectMapModule" [label ="learningObjectMapModule" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#DDDDDD"]
+			
+  // Other nodes
+      
+	"map" [label ="map" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"learningObjectMap" [label ="learningObjectMap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+	"learningObjectMapModule" -> "map" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"map" -> "learningObjectMap" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain sw-d">
+   <nodes root="sw-d">
+      <node name="ph">
+         <node name="msgph"/>
+         <node name="filepath"/>
+         <node name="userinput"/>
+         <node name="systemoutput"/>
+      </node>
+      <node name="pre">
+         <node name="msgblock"/>
+      </node>
+      <node name="keyword">
+         <node name="msgnum"/>
+         <node name="cmdname"/>
+         <node name="varname"/>
+      </node>
+   </nodes>
+</graph>

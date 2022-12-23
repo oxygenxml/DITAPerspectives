@@ -1,0 +1,213 @@
+// DITA Modules hierarchy
+strict digraph {
+			
+  // Other nodes
+      
+	"map" [label ="map" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"bookmap" [label ="bookmap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"learningObjectMap" [label ="learningObjectMap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"learningmap-d" [label ="learningmap-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"learningGroupMap" [label ="learningGroupMap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"glossref-d" [label ="glossref-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"ditavalref-d" [label ="ditavalref-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"mapgroup-d" [label ="mapgroup-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"classify-d" [label ="classify-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"subjectScheme" [label ="subjectScheme" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+      
+	"topic" [label ="topic" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#AFA7F4"]
+         
+	"bookmap" [label ="bookmap" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"learningBase" [label ="learningBase" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+            
+	"learningSummary" [label ="learningSummary" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"learningPlan" [label ="learningPlan" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"learningOverview" [label ="learningOverview" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"learningContent" [label ="learningContent" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"learningAssessment" [label ="learningAssessment" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+         
+         
+	"learningInteractionBase2-d" [label ="learningInteractionBase2-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+            
+	"learning2-d" [label ="learning2-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+         
+         
+	"learningInteractionBase-d" [label ="learningInteractionBase-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+            
+	"learning-d" [label ="learning-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+         
+         
+	"learningmeta-d" [label ="learningmeta-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"abbrev-d" [label ="abbrev-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"markup-d" [label ="markup-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+            
+	"xml-d" [label ="xml-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+         
+         
+	"mathml-d" [label ="mathml-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"troubleshooting" [label ="troubleshooting" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"svg-d" [label ="svg-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"ui-d" [label ="ui-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"reference" [label ="reference" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"equation-d" [label ="equation-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"task" [label ="task" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+            
+	"taskreq-d" [label ="taskreq-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+         
+         
+	"pr-d" [label ="pr-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"concept" [label ="concept" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+            
+	"glossentry" [label ="glossentry" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+            
+	"glossgroup" [label ="glossgroup" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#BFCFFF"]
+         
+         
+	"sw-d" [label ="sw-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"relmgmt-d" [label ="relmgmt-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"xnal-d" [label ="xnal-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"ditavalref-d" [label ="ditavalref-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"delay-d" [label ="delay-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"indexing-d" [label ="indexing-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"hazard-d" [label ="hazard-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"hi-d" [label ="hi-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"ut-d" [label ="ut-d" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+         
+	"subjectScheme" [label ="subjectScheme" fontname="Arial" shape="Mrecord" style="filled"  fillcolor="#1AFABC"]
+      
+   
+  // Edges
+      
+         
+	"map" -> "bookmap" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"map" -> "learningObjectMap" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"map" -> "learningmap-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"map" -> "learningGroupMap" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"map" -> "glossref-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"map" -> "ditavalref-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"map" -> "mapgroup-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"map" -> "classify-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"map" -> "subjectScheme" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+      
+         
+	"topic" -> "bookmap" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "learningBase" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"learningBase" -> "learningSummary" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"learningBase" -> "learningPlan" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"learningBase" -> "learningOverview" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"learningBase" -> "learningContent" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"learningBase" -> "learningAssessment" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+         
+	"topic" -> "learningInteractionBase2-d" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"learningInteractionBase2-d" -> "learning2-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+         
+	"topic" -> "learningInteractionBase-d" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"learningInteractionBase-d" -> "learning-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+         
+	"topic" -> "learningmeta-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "abbrev-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "markup-d" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"markup-d" -> "xml-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+         
+	"topic" -> "mathml-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "troubleshooting" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "svg-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "ui-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "reference" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "equation-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "task" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"task" -> "taskreq-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+         
+	"topic" -> "pr-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "concept" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"concept" -> "glossentry" [fillcolor="#a6cee3" color="#1f78b4"]
+            
+	"concept" -> "glossgroup" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+         
+	"topic" -> "sw-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "relmgmt-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "xnal-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "ditavalref-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "delay-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "indexing-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "hazard-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "hi-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "ut-d" [fillcolor="#a6cee3" color="#1f78b4"]
+         
+	"topic" -> "subjectScheme" [fillcolor="#a6cee3" color="#1f78b4"]
+      
+   }

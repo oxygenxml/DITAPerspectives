@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph description="DITA Domain glossref-d">
+   <nodes root="glossref-d">
+      <node name="topicref">
+         <node name="glossref"/>
+      </node>
+   </nodes>
+</graph>
