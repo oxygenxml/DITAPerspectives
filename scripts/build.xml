@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir="." name="ditaPerspectives">
 	
-	<property name="outputFolder" value="../generated-reports/DITA"/>
+	<!-- These are not supposed to change -->
 	<property name="baseXSLFolder" value="xslt"/>
-	<property name="stylesFolder" value="../frameworks/graphModel/xslt"/>
+	<property name="graphModelXSLFolder" value="../frameworks/graphModel/xslt"/>
 	<property name="categoriesStylesheet" value="${baseXSLFolder}/categories.xsl"/>
 	<property name="outputTemplate" value="../report-template"/>
 	
+	<!-- This needs to point to the actual dot executable -->
 	<property name="dot" value="/usr/local/bin/dot"/>
+	
+	<!-- Where the output shoul be placed -->
+	<property name="outputFolder" value="../generated-reports/DITA"/>
+	<!-- The location of the Relax NG schemas, this is relative to the 
+		categories XSLT file location, defined by the categoriesStylesheet property -->
+	<property name="relaxNGSchemasFolder" value="../../data/DITA1.3/"/>
+	
+	<!-- Targets: -->
 	
 	<target name="copyTemplateResources">
 		<copydir src="${outputTemplate}/topics" dest="${outputFolder}/topics"/>
@@ -15,14 +24,16 @@
 	</target>
 	
 	<target name="generateCategories">
-		<xslt in="${categoriesStylesheet}" style="${categoriesStylesheet}" out="${outputFolder}/categories.xml"/>
+		<xslt in="${categoriesStylesheet}" style="${categoriesStylesheet}" out="${outputFolder}/categories.xml">
+			<param name="relaxNGSchemasFolder" expression="${relaxNGSchemasFolder}"/>
+		</xslt>
 	</target>
 
 
 	<target name="generateGraph" depends="generateCategories">
 		<xslt in="${outputFolder}/categories.xml" style="${baseXSLFolder}/extract${module}.xsl" out="${outputFolder}/gm/${module}.xml"/>
-		<xslt in="${outputFolder}/gm/${module}.xml" style="${stylesFolder}/graphModel2HTML.xsl" out="${outputFolder}/gm/${module}.html"/>
-		<xslt in="${outputFolder}/gm/${module}.xml" style="${stylesFolder}/graphModel2DOT.xsl" out="${outputFolder}/gm/${module}.dot"/>
+		<xslt in="${outputFolder}/gm/${module}.xml" style="${graphModelXSLFolder}/graphModel2HTML.xsl" out="${outputFolder}/gm/${module}.html"/>
+		<xslt in="${outputFolder}/gm/${module}.xml" style="${graphModelXSLFolder}/graphModel2DOT.xsl" out="${outputFolder}/gm/${module}.dot"/>
 		<exec executable="${dot}">
 			<arg value="-Tsvg"/>
 			<arg value="-o${outputFolder}/gm/${module}.svg"/>
@@ -33,7 +44,7 @@
 	
 	<target name="generateSVGGraph" depends="generateCategories">
 		<xslt in="${outputFolder}/categories.xml" style="${baseXSLFolder}/extract${module}.xsl" out="${outputFolder}/gm/${module}.xml"/>
-		<xslt in="${outputFolder}/gm/${module}.xml" style="${stylesFolder}/graphModel2DOT.xsl" out="${outputFolder}/gm/${module}.dot"/>
+		<xslt in="${outputFolder}/gm/${module}.xml" style="${graphModelXSLFolder}/graphModel2DOT.xsl" out="${outputFolder}/gm/${module}.dot"/>
 		<exec executable="${dot}">
 			<arg value="-Tsvg"/>
 			<arg value="-o${outputFolder}/gm/${module}.svg"/>
@@ -88,9 +99,9 @@
 		</antcall>
 		
 		<xslt basedir="${outputFolder}/gm/domains" includes="*.xml" 
-			style="${stylesFolder}/graphModel2HTML.xsl" destdir="${outputFolder}/gm/domains">
+			style="${graphModelXSLFolder}/graphModel2HTML.xsl" destdir="${outputFolder}/gm/domains">
 		</xslt>
-		<xslt basedir="${outputFolder}/gm/domains" includes="*.xml" style="${stylesFolder}/graphModel2DOT.xsl" destdir="${outputFolder}/gm/domains">
+		<xslt basedir="${outputFolder}/gm/domains" includes="*.xml" style="${graphModelXSLFolder}/graphModel2DOT.xsl" destdir="${outputFolder}/gm/domains">
 			<mapper from="*.xml" to="*.dot" type="glob"/>
 		</xslt>
 		
@@ -111,9 +122,9 @@
 		</antcall>
 		
 		<xslt basedir="${outputFolder}/gm/specializations" includes="*.xml" 
-			style="${stylesFolder}/graphModel2HTML.xsl" destdir="${outputFolder}/gm/specializations">
+			style="${graphModelXSLFolder}/graphModel2HTML.xsl" destdir="${outputFolder}/gm/specializations">
 		</xslt>
-		<xslt basedir="${outputFolder}/gm/specializations" includes="*.xml" style="${stylesFolder}/graphModel2DOT.xsl" destdir="${outputFolder}/gm/specializations">
+		<xslt basedir="${outputFolder}/gm/specializations" includes="*.xml" style="${graphModelXSLFolder}/graphModel2DOT.xsl" destdir="${outputFolder}/gm/specializations">
 			<mapper from="*.xml" to="*.dot" type="glob"/>
 		</xslt>
 		
@@ -146,9 +157,7 @@
 	<target name="dita13">
 		<antcall target="all">
 			<param name="outputFolder" value="${outputFolder}13"/>
-			<param name="stylesFolder" value="../frameworks/graphModel/xslt"/>
-			<param name="categoriesStylesheet" value="${baseXSLFolder}/categories.xsl"/>
-			<param name="outputTemplate" value="../report-template"/>
+			<param name="relaxNGSchemasFolder" value="../../data/DITA1.3/"/>
 		</antcall>
 	</target>
 	
@@ -161,9 +170,7 @@
 	<target name="dita20">
 		<antcall target="all">
 			<param name="outputFolder" value="${outputFolder}20"/>
-			<param name="stylesFolder" value="../frameworks/graphModel/xslt"/>
-			<param name="categoriesStylesheet" value="${baseXSLFolder}/categories2.xsl"/>
-			<param name="outputTemplate" value="../report-template"/>
+			<param name="relaxNGSchemasFolder" value="../../data/DITA2.0/"/>
 		</antcall>
 	</target>
 	<target name="cleanDita20">

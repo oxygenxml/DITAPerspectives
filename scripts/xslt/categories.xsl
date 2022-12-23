@@ -13,8 +13,8 @@
 	version="2.0">
 	
 	<xsl:output indent="yes"/>
-	<xsl:param name="relax" select="'../../data/DITA1.3/rng/'"/>
-	<xsl:variable name="basePath" select="resolve-uri($relax, base-uri(doc('')))"/>
+	<xsl:param name="relaxNGSchemasFolder" select="'../../data/DITA1.3/'"/>
+	<xsl:variable name="basePath" select="resolve-uri($relaxNGSchemasFolder, base-uri(doc('')))"/>
 	
 	<xsl:template match="/">
 		<xsl:call-template name="main"/>
@@ -22,21 +22,25 @@
 	
 	<xsl:template name="main">
 		<xsl:variable name="arg">
-			<xsl:value-of select="$relax"/>
+			<xsl:value-of select="$relaxNGSchemasFolder"/>
 			<xsl:text>?select=*.rng;recurse=yes;on-error=ignore</xsl:text>
 		</xsl:variable>
 		<categories>
-			<xsl:for-each-group group-by="tokenize(base-uri(.), '/')[last()-2]" select="collection($arg)">
+			<!-- Handle the difference between 1.3 and 2.0 schema structure, 1.3 has an additional rng subfolder -->
+			<xsl:for-each-group 
+				group-by="let $g:=tokenize(base-uri(.), '/')[last()-1] 
+					return if ($g='rng') then tokenize(base-uri(.), '/')[last()-2] else $g" 
+				select="collection($arg)">
 				<xsl:variable name="group" select="current-grouping-key()"/>
-				<xsl:if test="not($group = ('ditaval', 'xhtml', 'svg', 'mathml'))">
+				<xsl:if test="not($group = ('ditaval', 'xhtml', 'svg', 'svg11', 'mathml', 'mathml3'))">
 					<group name="{$group}">
 						<xsl:for-each select="current-group()">
-							<schema file="{$relax}{substring-after(base-uri(.), $basePath)}">
+							<schema file="{$relaxNGSchemasFolder}{substring-after(base-uri(.), $basePath)}">
 								<xsl:copy-of select="//arch:moduleDesc"/>
 								<xsl:for-each select=".//rng:element[@name]">
 									<element 
 										name="{@name}"
-										definedIn="{$relax}{substring-after(base-uri(.), $basePath)}"
+										definedIn="{$relaxNGSchemasFolder}{substring-after(base-uri(.), $basePath)}"
 										definedInSchema="{substring-before(tokenize(base-uri(/), '/')[last()], '.rng')}"
 										group="{$group}"
 										>
